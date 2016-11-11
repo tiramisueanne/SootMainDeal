@@ -1,0 +1,21 @@
+public class MySootMainExtension {
+	public static void main(String[] args){
+
+	PackManager.v().getPack("jtp").add(new Transform("/*Name of transformation*/",
+		new BodyTransformer() {
+			
+			protected void internalTransform(/*final*/ Body b, String phaseName, Map options) {
+				
+				Chain units = b.getUnits();
+				Iterator unitIt = units.snapshotIterator();
+				for ( unitIt; unitIt.hasNext(); ){
+					Unit u = unitIt.next();
+				}
+			b.validate();
+			}
+
+		}
+	));
+	soot.Main.main(args); // or Main.main(args); ????
+	}
+}
