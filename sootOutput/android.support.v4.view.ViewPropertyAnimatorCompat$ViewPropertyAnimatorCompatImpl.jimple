@@ -1,0 +1,67 @@
+interface  android.support.v4.view.ViewPropertyAnimatorCompat$ViewPropertyAnimatorCompatImpl extends java.lang.Object
+{
+
+    public abstract void alpha(android.view.View, float);
+
+    public abstract void alphaBy(android.view.View, float);
+
+    public abstract void cancel(android.view.View);
+
+    public abstract long getDuration(android.view.View);
+
+    public abstract android.view.animation.Interpolator getInterpolator(android.view.View);
+
+    public abstract long getStartDelay(android.view.View);
+
+    public abstract void rotation(android.view.View, float);
+
+    public abstract void rotationBy(android.view.View, float);
+
+    public abstract void rotationX(android.view.View, float);
+
+    public abstract void rotationXBy(android.view.View, float);
+
+    public abstract void rotationY(android.view.View, float);
+
+    public abstract void rotationYBy(android.view.View, float);
+
+    public abstract void scaleX(android.view.View, float);
+
+    public abstract void scaleXBy(android.view.View, float);
+
+    public abstract void scaleY(android.view.View, float);
+
+    public abstract void scaleYBy(android.view.View, float);
+
+    public abstract void setDuration(android.view.View, long);
+
+    public abstract void setInterpolator(android.view.View, android.view.animation.Interpolator);
+
+    public abstract void setListener(android.view.View, android.support.v4.view.ViewPropertyAnimatorListener);
+
+    public abstract void setStartDelay(android.view.View, long);
+
+    public abstract void start(android.view.View);
+
+    public abstract void translationX(android.view.View, float);
+
+    public abstract void translationXBy(android.view.View, float);
+
+    public abstract void translationY(android.view.View, float);
+
+    public abstract void translationYBy(android.view.View, float);
+
+    public abstract void withEndAction(android.view.View, java.lang.Runnable);
+
+    public abstract void withLayer(android.view.View);
+
+    public abstract void withStartAction(android.view.View, java.lang.Runnable);
+
+    public abstract void x(android.view.View, float);
+
+    public abstract void xBy(android.view.View, float);
+
+    public abstract void y(android.view.View, float);
+
+    public abstract void yBy(android.view.View, float);
+}

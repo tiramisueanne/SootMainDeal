@@ -1,0 +1,192 @@
+public class android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper extends java.lang.Object implements android.view.ActionMode$Callback
+{
+    final android.content.Context mContext;
+    private android.support.v7.internal.view.ActionModeWrapper mLastStartedActionMode;
+    final android.support.v7.view.ActionMode$Callback mWrappedCallback;
+
+    public void <init>(android.content.Context, android.support.v7.view.ActionMode$Callback)
+    {
+        android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper $r0;
+        android.content.Context $r1;
+        android.support.v7.view.ActionMode$Callback $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper;
+
+        $r1 := @parameter0: android.content.Context;
+
+        $r2 := @parameter1: android.support.v7.view.ActionMode$Callback;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.content.Context mContext> = $r1;
+
+        $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode$Callback mWrappedCallback> = $r2;
+
+        return;
+    }
+
+    private android.support.v7.view.ActionMode getActionModeWrapper(android.view.ActionMode)
+    {
+        android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper $r0;
+        android.view.ActionMode $r1, $r3;
+        android.support.v7.internal.view.ActionModeWrapper $r2;
+        android.content.Context $r4;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper;
+
+        $r1 := @parameter0: android.view.ActionMode;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.internal.view.ActionModeWrapper mLastStartedActionMode>;
+
+        if $r2 == null goto label1;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.internal.view.ActionModeWrapper mLastStartedActionMode>;
+
+        $r3 = $r2.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        if $r3 != $r1 goto label1;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.internal.view.ActionModeWrapper mLastStartedActionMode>;
+
+        return $r2;
+
+     label1:
+        $r4 = $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.content.Context mContext>;
+
+        $r2 = virtualinvoke $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.internal.view.ActionModeWrapper createActionModeWrapper(android.content.Context,android.view.ActionMode)>($r4, $r1);
+
+        return $r2;
+    }
+
+    protected android.support.v7.internal.view.ActionModeWrapper createActionModeWrapper(android.content.Context, android.view.ActionMode)
+    {
+        android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper $r0;
+        android.content.Context $r1;
+        android.view.ActionMode $r2;
+        android.support.v7.internal.view.ActionModeWrapper $r3;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper;
+
+        $r1 := @parameter0: android.content.Context;
+
+        $r2 := @parameter1: android.view.ActionMode;
+
+        $r3 = new android.support.v7.internal.view.ActionModeWrapper;
+
+        specialinvoke $r3.<android.support.v7.internal.view.ActionModeWrapper: void <init>(android.content.Context,android.view.ActionMode)>($r1, $r2);
+
+        return $r3;
+    }
+
+    public boolean onActionItemClicked(android.view.ActionMode, android.view.MenuItem)
+    {
+        android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper $r0;
+        android.view.ActionMode $r1;
+        android.view.MenuItem $r2;
+        android.support.v7.view.ActionMode$Callback $r3;
+        android.support.v7.view.ActionMode $r4;
+        boolean $z0;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper;
+
+        $r1 := @parameter0: android.view.ActionMode;
+
+        $r2 := @parameter1: android.view.MenuItem;
+
+        $r3 = $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode$Callback mWrappedCallback>;
+
+        $r4 = specialinvoke $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode getActionModeWrapper(android.view.ActionMode)>($r1);
+
+        $r2 = staticinvoke <android.support.v7.internal.view.menu.MenuWrapperFactory: android.view.MenuItem createMenuItemWrapper(android.view.MenuItem)>($r2);
+
+        $z0 = interfaceinvoke $r3.<android.support.v7.view.ActionMode$Callback: boolean onActionItemClicked(android.support.v7.view.ActionMode,android.view.MenuItem)>($r4, $r2);
+
+        return $z0;
+    }
+
+    public boolean onCreateActionMode(android.view.ActionMode, android.view.Menu)
+    {
+        android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper $r0;
+        android.view.ActionMode $r1;
+        android.view.Menu $r2;
+        android.support.v7.view.ActionMode$Callback $r3;
+        android.support.v7.view.ActionMode $r4;
+        boolean $z0;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper;
+
+        $r1 := @parameter0: android.view.ActionMode;
+
+        $r2 := @parameter1: android.view.Menu;
+
+        $r3 = $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode$Callback mWrappedCallback>;
+
+        $r4 = specialinvoke $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode getActionModeWrapper(android.view.ActionMode)>($r1);
+
+        $r2 = staticinvoke <android.support.v7.internal.view.menu.MenuWrapperFactory: android.view.Menu createMenuWrapper(android.view.Menu)>($r2);
+
+        $z0 = interfaceinvoke $r3.<android.support.v7.view.ActionMode$Callback: boolean onCreateActionMode(android.support.v7.view.ActionMode,android.view.Menu)>($r4, $r2);
+
+        return $z0;
+    }
+
+    public void onDestroyActionMode(android.view.ActionMode)
+    {
+        android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper $r0;
+        android.view.ActionMode $r1;
+        android.support.v7.view.ActionMode$Callback $r2;
+        android.support.v7.view.ActionMode $r3;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper;
+
+        $r1 := @parameter0: android.view.ActionMode;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode$Callback mWrappedCallback>;
+
+        $r3 = specialinvoke $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode getActionModeWrapper(android.view.ActionMode)>($r1);
+
+        interfaceinvoke $r2.<android.support.v7.view.ActionMode$Callback: void onDestroyActionMode(android.support.v7.view.ActionMode)>($r3);
+
+        return;
+    }
+
+    public boolean onPrepareActionMode(android.view.ActionMode, android.view.Menu)
+    {
+        android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper $r0;
+        android.view.ActionMode $r1;
+        android.view.Menu $r2;
+        android.support.v7.view.ActionMode$Callback $r3;
+        android.support.v7.view.ActionMode $r4;
+        boolean $z0;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper;
+
+        $r1 := @parameter0: android.view.ActionMode;
+
+        $r2 := @parameter1: android.view.Menu;
+
+        $r3 = $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode$Callback mWrappedCallback>;
+
+        $r4 = specialinvoke $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.view.ActionMode getActionModeWrapper(android.view.ActionMode)>($r1);
+
+        $r2 = staticinvoke <android.support.v7.internal.view.menu.MenuWrapperFactory: android.view.Menu createMenuWrapper(android.view.Menu)>($r2);
+
+        $z0 = interfaceinvoke $r3.<android.support.v7.view.ActionMode$Callback: boolean onPrepareActionMode(android.support.v7.view.ActionMode,android.view.Menu)>($r4, $r2);
+
+        return $z0;
+    }
+
+    public void setLastStartedActionMode(android.support.v7.internal.view.ActionModeWrapper)
+    {
+        android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper $r0;
+        android.support.v7.internal.view.ActionModeWrapper $r1;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper;
+
+        $r1 := @parameter0: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: android.support.v7.internal.view.ActionModeWrapper mLastStartedActionMode> = $r1;
+
+        return;
+    }
+}

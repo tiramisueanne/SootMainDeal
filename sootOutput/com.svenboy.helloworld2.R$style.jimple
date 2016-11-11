@@ -1,0 +1,442 @@
+public final class com.svenboy.helloworld2.R$style extends java.lang.Object
+{
+    public static final int AppBaseTheme;
+    public static final int AppTheme;
+    public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog;
+    public static final int TextAppearance_AppCompat_Base_SearchResult;
+    public static final int TextAppearance_AppCompat_Base_SearchResult_Subtitle;
+    public static final int TextAppearance_AppCompat_Base_SearchResult_Title;
+    public static final int TextAppearance_AppCompat_Base_Widget_PopupMenu_Large;
+    public static final int TextAppearance_AppCompat_Base_Widget_PopupMenu_Small;
+    public static final int TextAppearance_AppCompat_Light_Base_SearchResult;
+    public static final int TextAppearance_AppCompat_Light_Base_SearchResult_Subtitle;
+    public static final int TextAppearance_AppCompat_Light_Base_SearchResult_Title;
+    public static final int TextAppearance_AppCompat_Light_Base_Widget_PopupMenu_Large;
+    public static final int TextAppearance_AppCompat_Light_Base_Widget_PopupMenu_Small;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Title;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+    public static final int TextAppearance_AppCompat_SearchResult_Subtitle;
+    public static final int TextAppearance_AppCompat_SearchResult_Title;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Menu;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Subtitle;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Subtitle_Inverse;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Title;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionBar_Title_Inverse;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionMode_Subtitle;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionMode_Subtitle_Inverse;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionMode_Title;
+    public static final int TextAppearance_AppCompat_Widget_Base_ActionMode_Title_Inverse;
+    public static final int TextAppearance_AppCompat_Widget_Base_DropDownItem;
+    public static final int TextAppearance_AppCompat_Widget_DropDownItem;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small;
+    public static final int TextAppearance_Widget_AppCompat_Base_ExpandedMenu_Item;
+    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+    public static final int Theme_AppCompat;
+    public static final int Theme_AppCompat_Base_CompactMenu;
+    public static final int Theme_AppCompat_Base_CompactMenu_Dialog;
+    public static final int Theme_AppCompat_CompactMenu;
+    public static final int Theme_AppCompat_CompactMenu_Dialog;
+    public static final int Theme_AppCompat_DialogWhenLarge;
+    public static final int Theme_AppCompat_Light;
+    public static final int Theme_AppCompat_Light_DarkActionBar;
+    public static final int Theme_AppCompat_Light_DialogWhenLarge;
+    public static final int Theme_Base;
+    public static final int Theme_Base_AppCompat;
+    public static final int Theme_Base_AppCompat_DialogWhenLarge;
+    public static final int Theme_Base_AppCompat_DialogWhenLarge_Base;
+    public static final int Theme_Base_AppCompat_Dialog_FixedSize;
+    public static final int Theme_Base_AppCompat_Dialog_Light_FixedSize;
+    public static final int Theme_Base_AppCompat_Light;
+    public static final int Theme_Base_AppCompat_Light_DarkActionBar;
+    public static final int Theme_Base_AppCompat_Light_DialogWhenLarge;
+    public static final int Theme_Base_AppCompat_Light_DialogWhenLarge_Base;
+    public static final int Theme_Base_Light;
+    public static final int Widget_AppCompat_ActionBar;
+    public static final int Widget_AppCompat_ActionBar_Solid;
+    public static final int Widget_AppCompat_ActionBar_TabBar;
+    public static final int Widget_AppCompat_ActionBar_TabText;
+    public static final int Widget_AppCompat_ActionBar_TabView;
+    public static final int Widget_AppCompat_ActionButton;
+    public static final int Widget_AppCompat_ActionButton_CloseMode;
+    public static final int Widget_AppCompat_ActionButton_Overflow;
+    public static final int Widget_AppCompat_ActionMode;
+    public static final int Widget_AppCompat_ActivityChooserView;
+    public static final int Widget_AppCompat_AutoCompleteTextView;
+    public static final int Widget_AppCompat_Base_ActionBar;
+    public static final int Widget_AppCompat_Base_ActionBar_Solid;
+    public static final int Widget_AppCompat_Base_ActionBar_TabBar;
+    public static final int Widget_AppCompat_Base_ActionBar_TabText;
+    public static final int Widget_AppCompat_Base_ActionBar_TabView;
+    public static final int Widget_AppCompat_Base_ActionButton;
+    public static final int Widget_AppCompat_Base_ActionButton_CloseMode;
+    public static final int Widget_AppCompat_Base_ActionButton_Overflow;
+    public static final int Widget_AppCompat_Base_ActionMode;
+    public static final int Widget_AppCompat_Base_ActivityChooserView;
+    public static final int Widget_AppCompat_Base_AutoCompleteTextView;
+    public static final int Widget_AppCompat_Base_DropDownItem_Spinner;
+    public static final int Widget_AppCompat_Base_ListPopupWindow;
+    public static final int Widget_AppCompat_Base_ListView_DropDown;
+    public static final int Widget_AppCompat_Base_ListView_Menu;
+    public static final int Widget_AppCompat_Base_PopupMenu;
+    public static final int Widget_AppCompat_Base_ProgressBar;
+    public static final int Widget_AppCompat_Base_ProgressBar_Horizontal;
+    public static final int Widget_AppCompat_Base_Spinner;
+    public static final int Widget_AppCompat_DropDownItem_Spinner;
+    public static final int Widget_AppCompat_Light_ActionBar;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+    public static final int Widget_AppCompat_Light_ActionButton;
+    public static final int Widget_AppCompat_Light_ActionButton_CloseMode;
+    public static final int Widget_AppCompat_Light_ActionButton_Overflow;
+    public static final int Widget_AppCompat_Light_ActionMode_Inverse;
+    public static final int Widget_AppCompat_Light_ActivityChooserView;
+    public static final int Widget_AppCompat_Light_AutoCompleteTextView;
+    public static final int Widget_AppCompat_Light_Base_ActionBar;
+    public static final int Widget_AppCompat_Light_Base_ActionBar_Solid;
+    public static final int Widget_AppCompat_Light_Base_ActionBar_Solid_Inverse;
+    public static final int Widget_AppCompat_Light_Base_ActionBar_TabBar;
+    public static final int Widget_AppCompat_Light_Base_ActionBar_TabBar_Inverse;
+    public static final int Widget_AppCompat_Light_Base_ActionBar_TabText;
+    public static final int Widget_AppCompat_Light_Base_ActionBar_TabText_Inverse;
+    public static final int Widget_AppCompat_Light_Base_ActionBar_TabView;
+    public static final int Widget_AppCompat_Light_Base_ActionBar_TabView_Inverse;
+    public static final int Widget_AppCompat_Light_Base_ActionButton;
+    public static final int Widget_AppCompat_Light_Base_ActionButton_CloseMode;
+    public static final int Widget_AppCompat_Light_Base_ActionButton_Overflow;
+    public static final int Widget_AppCompat_Light_Base_ActionMode_Inverse;
+    public static final int Widget_AppCompat_Light_Base_ActivityChooserView;
+    public static final int Widget_AppCompat_Light_Base_AutoCompleteTextView;
+    public static final int Widget_AppCompat_Light_Base_DropDownItem_Spinner;
+    public static final int Widget_AppCompat_Light_Base_ListPopupWindow;
+    public static final int Widget_AppCompat_Light_Base_ListView_DropDown;
+    public static final int Widget_AppCompat_Light_Base_PopupMenu;
+    public static final int Widget_AppCompat_Light_Base_Spinner;
+    public static final int Widget_AppCompat_Light_DropDownItem_Spinner;
+    public static final int Widget_AppCompat_Light_ListPopupWindow;
+    public static final int Widget_AppCompat_Light_ListView_DropDown;
+    public static final int Widget_AppCompat_Light_PopupMenu;
+    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+    public static final int Widget_AppCompat_ListPopupWindow;
+    public static final int Widget_AppCompat_ListView_DropDown;
+    public static final int Widget_AppCompat_ListView_Menu;
+    public static final int Widget_AppCompat_PopupMenu;
+    public static final int Widget_AppCompat_ProgressBar;
+    public static final int Widget_AppCompat_ProgressBar_Horizontal;
+    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar;
+
+    public void <init>()
+    {
+        com.svenboy.helloworld2.R$style $r0;
+
+        $r0 := @this: com.svenboy.helloworld2.R$style;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Spinner_DropDown_ActionBar> = 2131427362;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ProgressBar_Horizontal> = 2131427337;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ProgressBar> = 2131427338;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_PopupMenu> = 2131427371;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ListView_Menu> = 2131427373;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ListView_DropDown> = 2131427366;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ListPopupWindow> = 2131427369;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Spinner_DropDown_ActionBar> = 2131427363;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_PopupMenu> = 2131427372;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ListView_DropDown> = 2131427367;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ListPopupWindow> = 2131427370;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_DropDownItem_Spinner> = 2131427365;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_Spinner> = 2131427420;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_PopupMenu> = 2131427432;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ListView_DropDown> = 2131427424;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ListPopupWindow> = 2131427430;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_DropDownItem_Spinner> = 2131427422;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_AutoCompleteTextView> = 2131427444;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActivityChooserView> = 2131427446;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionMode_Inverse> = 2131427407;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionButton_Overflow> = 2131427396;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionButton_CloseMode> = 2131427394;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionButton> = 2131427392;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar_TabView_Inverse> = 2131427402;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar_TabView> = 2131427401;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar_TabText_Inverse> = 2131427405;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar_TabText> = 2131427404;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar_TabBar_Inverse> = 2131427399;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar_TabBar> = 2131427398;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar_Solid_Inverse> = 2131427390;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar_Solid> = 2131427389;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_Base_ActionBar> = 2131427387;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_AutoCompleteTextView> = 2131427383;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActivityChooserView> = 2131427385;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionMode_Inverse> = 2131427356;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionButton_Overflow> = 2131427344;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionButton_CloseMode> = 2131427342;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionButton> = 2131427340;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar_TabView_Inverse> = 2131427350;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar_TabView> = 2131427349;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar_TabText_Inverse> = 2131427353;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar_TabText> = 2131427352;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar_TabBar_Inverse> = 2131427347;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar_TabBar> = 2131427346;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar_Solid_Inverse> = 2131427332;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar_Solid> = 2131427331;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Light_ActionBar> = 2131427329;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_DropDownItem_Spinner> = 2131427364;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_Spinner> = 2131427419;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ProgressBar_Horizontal> = 2131427417;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ProgressBar> = 2131427418;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_PopupMenu> = 2131427431;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ListView_Menu> = 2131427428;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ListView_DropDown> = 2131427423;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ListPopupWindow> = 2131427429;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_DropDownItem_Spinner> = 2131427421;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_AutoCompleteTextView> = 2131427443;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActivityChooserView> = 2131427445;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionMode> = 2131427406;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionButton_Overflow> = 2131427395;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionButton_CloseMode> = 2131427393;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionButton> = 2131427391;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionBar_TabView> = 2131427400;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionBar_TabText> = 2131427403;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionBar_TabBar> = 2131427397;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionBar_Solid> = 2131427388;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_Base_ActionBar> = 2131427386;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_AutoCompleteTextView> = 2131427382;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActivityChooserView> = 2131427384;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionMode> = 2131427355;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionButton_Overflow> = 2131427343;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionButton_CloseMode> = 2131427341;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionButton> = 2131427339;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionBar_TabView> = 2131427348;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionBar_TabText> = 2131427351;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionBar_TabBar> = 2131427345;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionBar_Solid> = 2131427330;
+
+        <com.svenboy.helloworld2.R$style: int Widget_AppCompat_ActionBar> = 2131427328;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_Light> = 2131427455;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat_Light_DialogWhenLarge_Base> = 2131427466;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat_Light_DialogWhenLarge> = 2131427462;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat_Light_DarkActionBar> = 2131427458;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat_Light> = 2131427457;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat_Dialog_Light_FixedSize> = 2131427464;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat_Dialog_FixedSize> = 2131427463;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat_DialogWhenLarge_Base> = 2131427465;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat_DialogWhenLarge> = 2131427461;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base_AppCompat> = 2131427456;
+
+        <com.svenboy.helloworld2.R$style: int Theme_Base> = 2131427454;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat_Light_DialogWhenLarge> = 2131427451;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat_Light_DarkActionBar> = 2131427449;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat_Light> = 2131427448;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat_DialogWhenLarge> = 2131427450;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat_CompactMenu_Dialog> = 2131427453;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat_CompactMenu> = 2131427452;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat_Base_CompactMenu_Dialog> = 2131427460;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat_Base_CompactMenu> = 2131427459;
+
+        <com.svenboy.helloworld2.R$style: int Theme_AppCompat> = 2131427447;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_Widget_AppCompat_ExpandedMenu_Item> = 2131427368;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_Widget_AppCompat_Base_ExpandedMenu_Item> = 2131427426;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_PopupMenu_Small> = 2131427375;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_PopupMenu_Large> = 2131427374;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_DropDownItem> = 2131427361;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_DropDownItem> = 2131427425;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionMode_Title_Inverse> = 2131427410;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionMode_Title> = 2131427408;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionMode_Subtitle_Inverse> = 2131427411;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionMode_Subtitle> = 2131427409;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionBar_Title_Inverse> = 2131427415;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionBar_Title> = 2131427413;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionBar_Subtitle_Inverse> = 2131427416;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionBar_Subtitle> = 2131427414;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_Base_ActionBar_Menu> = 2131427412;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse> = 2131427359;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionMode_Title> = 2131427357;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse> = 2131427360;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionMode_Subtitle> = 2131427358;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse> = 2131427335;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionBar_Title> = 2131427333;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse> = 2131427336;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionBar_Subtitle> = 2131427334;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Widget_ActionBar_Menu> = 2131427354;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_SearchResult_Title> = 2131427378;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_SearchResult_Subtitle> = 2131427379;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small> = 2131427377;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large> = 2131427376;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_SearchResult_Title> = 2131427380;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_SearchResult_Subtitle> = 2131427381;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_Base_Widget_PopupMenu_Small> = 2131427436;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_Base_Widget_PopupMenu_Large> = 2131427435;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_Base_SearchResult_Title> = 2131427441;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_Base_SearchResult_Subtitle> = 2131427442;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Light_Base_SearchResult> = 2131427440;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Base_Widget_PopupMenu_Small> = 2131427434;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Base_Widget_PopupMenu_Large> = 2131427433;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Base_SearchResult_Title> = 2131427438;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Base_SearchResult_Subtitle> = 2131427439;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Base_SearchResult> = 2131427437;
+
+        <com.svenboy.helloworld2.R$style: int TextAppearance_AppCompat_Base_CompactMenu_Dialog> = 2131427427;
+
+        <com.svenboy.helloworld2.R$style: int AppTheme> = 2131427468;
+
+        <com.svenboy.helloworld2.R$style: int AppBaseTheme> = 2131427467;
+
+        return;
+    }
+}

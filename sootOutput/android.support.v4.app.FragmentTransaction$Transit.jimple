@@ -1,0 +1,3 @@
+annotation interface  android.support.v4.app.FragmentTransaction$Transit extends java.lang.Object implements java.lang.'annotation'.Annotation
+{
+}

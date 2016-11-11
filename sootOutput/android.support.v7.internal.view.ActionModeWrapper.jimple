@@ -1,0 +1,250 @@
+public class android.support.v7.internal.view.ActionModeWrapper extends android.support.v7.view.ActionMode
+{
+    final android.view.MenuInflater mInflater;
+    final android.view.ActionMode mWrappedObject;
+
+    public void <init>(android.content.Context, android.view.ActionMode)
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        android.content.Context $r1;
+        android.view.ActionMode $r2;
+        android.support.v7.internal.view.SupportMenuInflater $r3;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r1 := @parameter0: android.content.Context;
+
+        $r2 := @parameter1: android.view.ActionMode;
+
+        specialinvoke $r0.<android.support.v7.view.ActionMode: void <init>()>();
+
+        $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject> = $r2;
+
+        $r3 = new android.support.v7.internal.view.SupportMenuInflater;
+
+        specialinvoke $r3.<android.support.v7.internal.view.SupportMenuInflater: void <init>(android.content.Context)>($r1);
+
+        $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.MenuInflater mInflater> = $r3;
+
+        return;
+    }
+
+    public void finish()
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        android.view.ActionMode $r1;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r1 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        virtualinvoke $r1.<android.view.ActionMode: void finish()>();
+
+        return;
+    }
+
+    public android.view.View getCustomView()
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        android.view.View $r1;
+        android.view.ActionMode $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        $r1 = virtualinvoke $r2.<android.view.ActionMode: android.view.View getCustomView()>();
+
+        return $r1;
+    }
+
+    public android.view.Menu getMenu()
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        android.view.ActionMode $r1;
+        android.view.Menu $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r1 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        $r2 = virtualinvoke $r1.<android.view.ActionMode: android.view.Menu getMenu()>();
+
+        $r2 = staticinvoke <android.support.v7.internal.view.menu.MenuWrapperFactory: android.view.Menu createMenuWrapper(android.view.Menu)>($r2);
+
+        return $r2;
+    }
+
+    public android.view.MenuInflater getMenuInflater()
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        android.view.MenuInflater r1;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        r1 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.MenuInflater mInflater>;
+
+        return r1;
+    }
+
+    public java.lang.CharSequence getSubtitle()
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        java.lang.CharSequence $r1;
+        android.view.ActionMode $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        $r1 = virtualinvoke $r2.<android.view.ActionMode: java.lang.CharSequence getSubtitle()>();
+
+        return $r1;
+    }
+
+    public java.lang.Object getTag()
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        java.lang.Object $r1;
+        android.view.ActionMode $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        $r1 = virtualinvoke $r2.<android.view.ActionMode: java.lang.Object getTag()>();
+
+        return $r1;
+    }
+
+    public java.lang.CharSequence getTitle()
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        java.lang.CharSequence $r1;
+        android.view.ActionMode $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        $r1 = virtualinvoke $r2.<android.view.ActionMode: java.lang.CharSequence getTitle()>();
+
+        return $r1;
+    }
+
+    public void invalidate()
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        android.view.ActionMode $r1;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r1 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        virtualinvoke $r1.<android.view.ActionMode: void invalidate()>();
+
+        return;
+    }
+
+    public void setCustomView(android.view.View)
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        android.view.View $r1;
+        android.view.ActionMode $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        virtualinvoke $r2.<android.view.ActionMode: void setCustomView(android.view.View)>($r1);
+
+        return;
+    }
+
+    public void setSubtitle(int)
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        int $i0;
+        android.view.ActionMode $r1;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $i0 := @parameter0: int;
+
+        $r1 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        virtualinvoke $r1.<android.view.ActionMode: void setSubtitle(int)>($i0);
+
+        return;
+    }
+
+    public void setSubtitle(java.lang.CharSequence)
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        java.lang.CharSequence $r1;
+        android.view.ActionMode $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r1 := @parameter0: java.lang.CharSequence;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        virtualinvoke $r2.<android.view.ActionMode: void setSubtitle(java.lang.CharSequence)>($r1);
+
+        return;
+    }
+
+    public void setTag(java.lang.Object)
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        java.lang.Object $r1;
+        android.view.ActionMode $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        virtualinvoke $r2.<android.view.ActionMode: void setTag(java.lang.Object)>($r1);
+
+        return;
+    }
+
+    public void setTitle(int)
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        int $i0;
+        android.view.ActionMode $r1;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $i0 := @parameter0: int;
+
+        $r1 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        virtualinvoke $r1.<android.view.ActionMode: void setTitle(int)>($i0);
+
+        return;
+    }
+
+    public void setTitle(java.lang.CharSequence)
+    {
+        android.support.v7.internal.view.ActionModeWrapper $r0;
+        java.lang.CharSequence $r1;
+        android.view.ActionMode $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapper;
+
+        $r1 := @parameter0: java.lang.CharSequence;
+
+        $r2 = $r0.<android.support.v7.internal.view.ActionModeWrapper: android.view.ActionMode mWrappedObject>;
+
+        virtualinvoke $r2.<android.view.ActionMode: void setTitle(java.lang.CharSequence)>($r1);
+
+        return;
+    }
+}

@@ -1,0 +1,286 @@
+public final class com.svenboy.helloworld2.R$drawable extends java.lang.Object
+{
+    public static final int abc_ab_bottom_solid_dark_holo;
+    public static final int abc_ab_bottom_solid_light_holo;
+    public static final int abc_ab_bottom_transparent_dark_holo;
+    public static final int abc_ab_bottom_transparent_light_holo;
+    public static final int abc_ab_share_pack_holo_dark;
+    public static final int abc_ab_share_pack_holo_light;
+    public static final int abc_ab_solid_dark_holo;
+    public static final int abc_ab_solid_light_holo;
+    public static final int abc_ab_stacked_solid_dark_holo;
+    public static final int abc_ab_stacked_solid_light_holo;
+    public static final int abc_ab_stacked_transparent_dark_holo;
+    public static final int abc_ab_stacked_transparent_light_holo;
+    public static final int abc_ab_transparent_dark_holo;
+    public static final int abc_ab_transparent_light_holo;
+    public static final int abc_cab_background_bottom_holo_dark;
+    public static final int abc_cab_background_bottom_holo_light;
+    public static final int abc_cab_background_top_holo_dark;
+    public static final int abc_cab_background_top_holo_light;
+    public static final int abc_ic_ab_back_holo_dark;
+    public static final int abc_ic_ab_back_holo_light;
+    public static final int abc_ic_cab_done_holo_dark;
+    public static final int abc_ic_cab_done_holo_light;
+    public static final int abc_ic_clear;
+    public static final int abc_ic_clear_disabled;
+    public static final int abc_ic_clear_holo_light;
+    public static final int abc_ic_clear_normal;
+    public static final int abc_ic_clear_search_api_disabled_holo_light;
+    public static final int abc_ic_clear_search_api_holo_light;
+    public static final int abc_ic_commit_search_api_holo_dark;
+    public static final int abc_ic_commit_search_api_holo_light;
+    public static final int abc_ic_go;
+    public static final int abc_ic_go_search_api_holo_light;
+    public static final int abc_ic_menu_moreoverflow_normal_holo_dark;
+    public static final int abc_ic_menu_moreoverflow_normal_holo_light;
+    public static final int abc_ic_menu_share_holo_dark;
+    public static final int abc_ic_menu_share_holo_light;
+    public static final int abc_ic_search;
+    public static final int abc_ic_search_api_holo_light;
+    public static final int abc_ic_voice_search;
+    public static final int abc_ic_voice_search_api_holo_light;
+    public static final int abc_item_background_holo_dark;
+    public static final int abc_item_background_holo_light;
+    public static final int abc_list_divider_holo_dark;
+    public static final int abc_list_divider_holo_light;
+    public static final int abc_list_focused_holo;
+    public static final int abc_list_longpressed_holo;
+    public static final int abc_list_pressed_holo_dark;
+    public static final int abc_list_pressed_holo_light;
+    public static final int abc_list_selector_background_transition_holo_dark;
+    public static final int abc_list_selector_background_transition_holo_light;
+    public static final int abc_list_selector_disabled_holo_dark;
+    public static final int abc_list_selector_disabled_holo_light;
+    public static final int abc_list_selector_holo_dark;
+    public static final int abc_list_selector_holo_light;
+    public static final int abc_menu_dropdown_panel_holo_dark;
+    public static final int abc_menu_dropdown_panel_holo_light;
+    public static final int abc_menu_hardkey_panel_holo_dark;
+    public static final int abc_menu_hardkey_panel_holo_light;
+    public static final int abc_search_dropdown_dark;
+    public static final int abc_search_dropdown_light;
+    public static final int abc_spinner_ab_default_holo_dark;
+    public static final int abc_spinner_ab_default_holo_light;
+    public static final int abc_spinner_ab_disabled_holo_dark;
+    public static final int abc_spinner_ab_disabled_holo_light;
+    public static final int abc_spinner_ab_focused_holo_dark;
+    public static final int abc_spinner_ab_focused_holo_light;
+    public static final int abc_spinner_ab_holo_dark;
+    public static final int abc_spinner_ab_holo_light;
+    public static final int abc_spinner_ab_pressed_holo_dark;
+    public static final int abc_spinner_ab_pressed_holo_light;
+    public static final int abc_tab_indicator_ab_holo;
+    public static final int abc_tab_selected_focused_holo;
+    public static final int abc_tab_selected_holo;
+    public static final int abc_tab_selected_pressed_holo;
+    public static final int abc_tab_unselected_pressed_holo;
+    public static final int abc_textfield_search_default_holo_dark;
+    public static final int abc_textfield_search_default_holo_light;
+    public static final int abc_textfield_search_right_default_holo_dark;
+    public static final int abc_textfield_search_right_default_holo_light;
+    public static final int abc_textfield_search_right_selected_holo_dark;
+    public static final int abc_textfield_search_right_selected_holo_light;
+    public static final int abc_textfield_search_selected_holo_dark;
+    public static final int abc_textfield_search_selected_holo_light;
+    public static final int abc_textfield_searchview_holo_dark;
+    public static final int abc_textfield_searchview_holo_light;
+    public static final int abc_textfield_searchview_right_holo_dark;
+    public static final int abc_textfield_searchview_right_holo_light;
+    public static final int ic_launcher;
+    public static final int mountain1000;
+
+    public void <init>()
+    {
+        com.svenboy.helloworld2.R$drawable $r0;
+
+        $r0 := @this: com.svenboy.helloworld2.R$drawable;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.svenboy.helloworld2.R$drawable: int mountain1000> = 2130837592;
+
+        <com.svenboy.helloworld2.R$drawable: int ic_launcher> = 2130837591;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_searchview_right_holo_light> = 2130837590;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_searchview_right_holo_dark> = 2130837589;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_searchview_holo_light> = 2130837588;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_searchview_holo_dark> = 2130837587;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_search_selected_holo_light> = 2130837586;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_search_selected_holo_dark> = 2130837585;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_search_right_selected_holo_light> = 2130837584;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_search_right_selected_holo_dark> = 2130837583;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_search_right_default_holo_light> = 2130837582;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_search_right_default_holo_dark> = 2130837581;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_search_default_holo_light> = 2130837580;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_textfield_search_default_holo_dark> = 2130837579;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_tab_unselected_pressed_holo> = 2130837578;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_tab_selected_pressed_holo> = 2130837577;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_tab_selected_holo> = 2130837576;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_tab_selected_focused_holo> = 2130837575;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_tab_indicator_ab_holo> = 2130837574;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_pressed_holo_light> = 2130837573;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_pressed_holo_dark> = 2130837572;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_holo_light> = 2130837571;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_holo_dark> = 2130837570;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_focused_holo_light> = 2130837569;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_focused_holo_dark> = 2130837568;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_disabled_holo_light> = 2130837567;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_disabled_holo_dark> = 2130837566;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_default_holo_light> = 2130837565;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_spinner_ab_default_holo_dark> = 2130837564;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_search_dropdown_light> = 2130837563;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_search_dropdown_dark> = 2130837562;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_menu_hardkey_panel_holo_light> = 2130837561;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_menu_hardkey_panel_holo_dark> = 2130837560;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_menu_dropdown_panel_holo_light> = 2130837559;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_menu_dropdown_panel_holo_dark> = 2130837558;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_selector_holo_light> = 2130837557;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_selector_holo_dark> = 2130837556;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_selector_disabled_holo_light> = 2130837555;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_selector_disabled_holo_dark> = 2130837554;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_selector_background_transition_holo_light> = 2130837553;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_selector_background_transition_holo_dark> = 2130837552;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_pressed_holo_light> = 2130837551;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_pressed_holo_dark> = 2130837550;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_longpressed_holo> = 2130837549;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_focused_holo> = 2130837548;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_divider_holo_light> = 2130837547;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_list_divider_holo_dark> = 2130837546;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_item_background_holo_light> = 2130837545;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_item_background_holo_dark> = 2130837544;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_voice_search_api_holo_light> = 2130837543;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_voice_search> = 2130837542;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_search_api_holo_light> = 2130837541;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_search> = 2130837540;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_menu_share_holo_light> = 2130837539;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_menu_share_holo_dark> = 2130837538;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_menu_moreoverflow_normal_holo_light> = 2130837537;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_menu_moreoverflow_normal_holo_dark> = 2130837536;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_go_search_api_holo_light> = 2130837535;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_go> = 2130837534;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_commit_search_api_holo_light> = 2130837533;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_commit_search_api_holo_dark> = 2130837532;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_clear_search_api_holo_light> = 2130837531;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_clear_search_api_disabled_holo_light> = 2130837530;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_clear_normal> = 2130837529;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_clear_holo_light> = 2130837528;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_clear_disabled> = 2130837527;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_clear> = 2130837526;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_cab_done_holo_light> = 2130837525;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_cab_done_holo_dark> = 2130837524;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_ab_back_holo_light> = 2130837523;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ic_ab_back_holo_dark> = 2130837522;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_cab_background_top_holo_light> = 2130837521;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_cab_background_top_holo_dark> = 2130837520;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_cab_background_bottom_holo_light> = 2130837519;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_cab_background_bottom_holo_dark> = 2130837518;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_transparent_light_holo> = 2130837517;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_transparent_dark_holo> = 2130837516;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_stacked_transparent_light_holo> = 2130837515;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_stacked_transparent_dark_holo> = 2130837514;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_stacked_solid_light_holo> = 2130837513;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_stacked_solid_dark_holo> = 2130837512;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_solid_light_holo> = 2130837511;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_solid_dark_holo> = 2130837510;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_share_pack_holo_light> = 2130837509;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_share_pack_holo_dark> = 2130837508;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_bottom_transparent_light_holo> = 2130837507;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_bottom_transparent_dark_holo> = 2130837506;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_bottom_solid_light_holo> = 2130837505;
+
+        <com.svenboy.helloworld2.R$drawable: int abc_ab_bottom_solid_dark_holo> = 2130837504;
+
+        return;
+    }
+}

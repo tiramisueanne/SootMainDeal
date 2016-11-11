@@ -1,0 +1,546 @@
+class android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl extends android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl
+{
+
+    void <init>()
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        specialinvoke $r0.<android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl: void <init>()>();
+
+        return;
+    }
+
+    public void alpha(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void alpha(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void alphaBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void alphaBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void cancel(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void cancel(android.view.View)>($r1);
+
+        return;
+    }
+
+    public long getDuration(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        long $l0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $l0 = staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: long getDuration(android.view.View)>($r1);
+
+        return $l0;
+    }
+
+    public long getStartDelay(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        long $l0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $l0 = staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: long getStartDelay(android.view.View)>($r1);
+
+        return $l0;
+    }
+
+    public void rotation(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void rotation(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void rotationBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void rotationBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void rotationX(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void rotationX(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void rotationXBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void rotationXBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void rotationY(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void rotationY(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void rotationYBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void rotationYBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void scaleX(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void scaleX(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void scaleXBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void scaleXBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void scaleY(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void scaleY(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void scaleYBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void scaleYBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void setDuration(android.view.View, long)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        long $l0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $l0 := @parameter1: long;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void setDuration(android.view.View,long)>($r1, $l0);
+
+        return;
+    }
+
+    public void setInterpolator(android.view.View, android.view.animation.Interpolator)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        android.view.animation.Interpolator $r2;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: android.view.animation.Interpolator;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void setInterpolator(android.view.View,android.view.animation.Interpolator)>($r1, $r2);
+
+        return;
+    }
+
+    public void setListener(android.view.View, android.support.v4.view.ViewPropertyAnimatorListener)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        android.support.v4.view.ViewPropertyAnimatorListener $r2;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: android.support.v4.view.ViewPropertyAnimatorListener;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void setListener(android.view.View,android.support.v4.view.ViewPropertyAnimatorListener)>($r1, $r2);
+
+        return;
+    }
+
+    public void setStartDelay(android.view.View, long)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        long $l0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $l0 := @parameter1: long;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void setStartDelay(android.view.View,long)>($r1, $l0);
+
+        return;
+    }
+
+    public void start(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void start(android.view.View)>($r1);
+
+        return;
+    }
+
+    public void translationX(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void translationX(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void translationXBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void translationXBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void translationY(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void translationY(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void translationYBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void translationYBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void withEndAction(android.view.View, java.lang.Runnable)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        java.lang.Runnable $r2;
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$1 $r3;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: java.lang.Runnable;
+
+        $r3 = new android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$1;
+
+        specialinvoke $r3.<android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$1: void <init>(android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl,java.lang.Runnable)>($r0, $r2);
+
+        virtualinvoke $r0.<android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl: void setListener(android.view.View,android.support.v4.view.ViewPropertyAnimatorListener)>($r1, $r3);
+
+        return;
+    }
+
+    public void withLayer(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$3 $r2;
+        int $i0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $i0 = staticinvoke <android.support.v4.view.ViewCompat: int getLayerType(android.view.View)>($r1);
+
+        $r2 = new android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$3;
+
+        specialinvoke $r2.<android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$3: void <init>(android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl,int)>($r0, $i0);
+
+        virtualinvoke $r0.<android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl: void setListener(android.view.View,android.support.v4.view.ViewPropertyAnimatorListener)>($r1, $r2);
+
+        return;
+    }
+
+    public void withStartAction(android.view.View, java.lang.Runnable)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        java.lang.Runnable $r2;
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$2 $r3;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: java.lang.Runnable;
+
+        $r3 = new android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$2;
+
+        specialinvoke $r3.<android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl$2: void <init>(android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl,java.lang.Runnable)>($r0, $r2);
+
+        virtualinvoke $r0.<android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl: void setListener(android.view.View,android.support.v4.view.ViewPropertyAnimatorListener)>($r1, $r3);
+
+        return;
+    }
+
+    public void x(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void x(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void xBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void xBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void y(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void y(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+
+    public void yBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$ICSViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        staticinvoke <android.support.v4.view.ViewPropertyAnimatorCompatICS: void yBy(android.view.View,float)>($r1, $f0);
+
+        return;
+    }
+}

@@ -1,0 +1,3 @@
+annotation interface  android.support.v4.view.ViewCompat$AccessibilityLiveRegion extends java.lang.Object implements java.lang.'annotation'.Annotation
+{
+}

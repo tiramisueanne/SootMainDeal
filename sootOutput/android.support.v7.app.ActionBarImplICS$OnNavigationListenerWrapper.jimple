@@ -1,0 +1,41 @@
+class android.support.v7.app.ActionBarImplICS$OnNavigationListenerWrapper extends java.lang.Object implements android.app.ActionBar$OnNavigationListener
+{
+    private final android.support.v7.app.ActionBar$OnNavigationListener mWrappedListener;
+
+    public void <init>(android.support.v7.app.ActionBar$OnNavigationListener)
+    {
+        android.support.v7.app.ActionBarImplICS$OnNavigationListenerWrapper $r0;
+        android.support.v7.app.ActionBar$OnNavigationListener $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$OnNavigationListenerWrapper;
+
+        $r1 := @parameter0: android.support.v7.app.ActionBar$OnNavigationListener;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<android.support.v7.app.ActionBarImplICS$OnNavigationListenerWrapper: android.support.v7.app.ActionBar$OnNavigationListener mWrappedListener> = $r1;
+
+        return;
+    }
+
+    public boolean onNavigationItemSelected(int, long)
+    {
+        android.support.v7.app.ActionBarImplICS$OnNavigationListenerWrapper $r0;
+        int $i0;
+        long $l1;
+        boolean $z0;
+        android.support.v7.app.ActionBar$OnNavigationListener $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$OnNavigationListenerWrapper;
+
+        $i0 := @parameter0: int;
+
+        $l1 := @parameter1: long;
+
+        $r1 = $r0.<android.support.v7.app.ActionBarImplICS$OnNavigationListenerWrapper: android.support.v7.app.ActionBar$OnNavigationListener mWrappedListener>;
+
+        $z0 = interfaceinvoke $r1.<android.support.v7.app.ActionBar$OnNavigationListener: boolean onNavigationItemSelected(int,long)>($i0, $l1);
+
+        return $z0;
+    }
+}

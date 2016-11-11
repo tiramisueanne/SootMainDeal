@@ -1,0 +1,349 @@
+public final class com.svenboy.helloworld2.R$attr extends java.lang.Object
+{
+    public static final int actionBarDivider;
+    public static final int actionBarItemBackground;
+    public static final int actionBarSize;
+    public static final int actionBarSplitStyle;
+    public static final int actionBarStyle;
+    public static final int actionBarTabBarStyle;
+    public static final int actionBarTabStyle;
+    public static final int actionBarTabTextStyle;
+    public static final int actionBarWidgetTheme;
+    public static final int actionButtonStyle;
+    public static final int actionDropDownStyle;
+    public static final int actionLayout;
+    public static final int actionMenuTextAppearance;
+    public static final int actionMenuTextColor;
+    public static final int actionModeBackground;
+    public static final int actionModeCloseButtonStyle;
+    public static final int actionModeCloseDrawable;
+    public static final int actionModeCopyDrawable;
+    public static final int actionModeCutDrawable;
+    public static final int actionModeFindDrawable;
+    public static final int actionModePasteDrawable;
+    public static final int actionModePopupWindowStyle;
+    public static final int actionModeSelectAllDrawable;
+    public static final int actionModeShareDrawable;
+    public static final int actionModeSplitBackground;
+    public static final int actionModeStyle;
+    public static final int actionModeWebSearchDrawable;
+    public static final int actionOverflowButtonStyle;
+    public static final int actionProviderClass;
+    public static final int actionViewClass;
+    public static final int activityChooserViewStyle;
+    public static final int background;
+    public static final int backgroundSplit;
+    public static final int backgroundStacked;
+    public static final int buttonBarButtonStyle;
+    public static final int buttonBarStyle;
+    public static final int customNavigationLayout;
+    public static final int disableChildrenWhenDisabled;
+    public static final int displayOptions;
+    public static final int divider;
+    public static final int dividerHorizontal;
+    public static final int dividerPadding;
+    public static final int dividerVertical;
+    public static final int dropDownListViewStyle;
+    public static final int dropdownListPreferredItemHeight;
+    public static final int expandActivityOverflowButtonDrawable;
+    public static final int height;
+    public static final int homeAsUpIndicator;
+    public static final int homeLayout;
+    public static final int icon;
+    public static final int iconifiedByDefault;
+    public static final int indeterminateProgressStyle;
+    public static final int initialActivityCount;
+    public static final int isLightTheme;
+    public static final int itemPadding;
+    public static final int listChoiceBackgroundIndicator;
+    public static final int listPopupWindowStyle;
+    public static final int listPreferredItemHeight;
+    public static final int listPreferredItemHeightLarge;
+    public static final int listPreferredItemHeightSmall;
+    public static final int listPreferredItemPaddingLeft;
+    public static final int listPreferredItemPaddingRight;
+    public static final int logo;
+    public static final int navigationMode;
+    public static final int paddingEnd;
+    public static final int paddingStart;
+    public static final int panelMenuListTheme;
+    public static final int panelMenuListWidth;
+    public static final int popupMenuStyle;
+    public static final int popupPromptView;
+    public static final int progressBarPadding;
+    public static final int progressBarStyle;
+    public static final int prompt;
+    public static final int queryHint;
+    public static final int searchDropdownBackground;
+    public static final int searchResultListItemHeight;
+    public static final int searchViewAutoCompleteTextView;
+    public static final int searchViewCloseIcon;
+    public static final int searchViewEditQuery;
+    public static final int searchViewEditQueryBackground;
+    public static final int searchViewGoIcon;
+    public static final int searchViewSearchIcon;
+    public static final int searchViewTextField;
+    public static final int searchViewTextFieldRight;
+    public static final int searchViewVoiceIcon;
+    public static final int selectableItemBackground;
+    public static final int showAsAction;
+    public static final int showDividers;
+    public static final int spinnerDropDownItemStyle;
+    public static final int spinnerMode;
+    public static final int spinnerStyle;
+    public static final int subtitle;
+    public static final int subtitleTextStyle;
+    public static final int textAllCaps;
+    public static final int textAppearanceLargePopupMenu;
+    public static final int textAppearanceListItem;
+    public static final int textAppearanceListItemSmall;
+    public static final int textAppearanceSearchResultSubtitle;
+    public static final int textAppearanceSearchResultTitle;
+    public static final int textAppearanceSmallPopupMenu;
+    public static final int textColorSearchUrl;
+    public static final int title;
+    public static final int titleTextStyle;
+    public static final int windowActionBar;
+    public static final int windowActionBarOverlay;
+    public static final int windowFixedHeightMajor;
+    public static final int windowFixedHeightMinor;
+    public static final int windowFixedWidthMajor;
+    public static final int windowFixedWidthMinor;
+    public static final int windowSplitActionBar;
+
+    public void <init>()
+    {
+        com.svenboy.helloworld2.R$attr $r0;
+
+        $r0 := @this: com.svenboy.helloworld2.R$attr;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <com.svenboy.helloworld2.R$attr: int windowSplitActionBar> = 2130771970;
+
+        <com.svenboy.helloworld2.R$attr: int windowFixedWidthMinor> = 2130771973;
+
+        <com.svenboy.helloworld2.R$attr: int windowFixedWidthMajor> = 2130771971;
+
+        <com.svenboy.helloworld2.R$attr: int windowFixedHeightMinor> = 2130771972;
+
+        <com.svenboy.helloworld2.R$attr: int windowFixedHeightMajor> = 2130771974;
+
+        <com.svenboy.helloworld2.R$attr: int windowActionBarOverlay> = 2130771969;
+
+        <com.svenboy.helloworld2.R$attr: int windowActionBar> = 2130771968;
+
+        <com.svenboy.helloworld2.R$attr: int titleTextStyle> = 2130772010;
+
+        <com.svenboy.helloworld2.R$attr: int title> = 2130772005;
+
+        <com.svenboy.helloworld2.R$attr: int textColorSearchUrl> = 2130772072;
+
+        <com.svenboy.helloworld2.R$attr: int textAppearanceSmallPopupMenu> = 2130771989;
+
+        <com.svenboy.helloworld2.R$attr: int textAppearanceSearchResultTitle> = 2130772070;
+
+        <com.svenboy.helloworld2.R$attr: int textAppearanceSearchResultSubtitle> = 2130772071;
+
+        <com.svenboy.helloworld2.R$attr: int textAppearanceListItemSmall> = 2130772004;
+
+        <com.svenboy.helloworld2.R$attr: int textAppearanceListItem> = 2130772003;
+
+        <com.svenboy.helloworld2.R$attr: int textAppearanceLargePopupMenu> = 2130771988;
+
+        <com.svenboy.helloworld2.R$attr: int textAllCaps> = 2130772077;
+
+        <com.svenboy.helloworld2.R$attr: int subtitleTextStyle> = 2130772011;
+
+        <com.svenboy.helloworld2.R$attr: int subtitle> = 2130772009;
+
+        <com.svenboy.helloworld2.R$attr: int spinnerStyle> = 2130772055;
+
+        <com.svenboy.helloworld2.R$attr: int spinnerMode> = 2130772050;
+
+        <com.svenboy.helloworld2.R$attr: int spinnerDropDownItemStyle> = 2130772056;
+
+        <com.svenboy.helloworld2.R$attr: int showDividers> = 2130772053;
+
+        <com.svenboy.helloworld2.R$attr: int showAsAction> = 2130772045;
+
+        <com.svenboy.helloworld2.R$attr: int selectableItemBackground> = 2130771993;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewVoiceIcon> = 2130772064;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewTextFieldRight> = 2130772068;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewTextField> = 2130772067;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewSearchIcon> = 2130772063;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewGoIcon> = 2130772062;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewEditQueryBackground> = 2130772066;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewEditQuery> = 2130772065;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewCloseIcon> = 2130772061;
+
+        <com.svenboy.helloworld2.R$attr: int searchViewAutoCompleteTextView> = 2130772073;
+
+        <com.svenboy.helloworld2.R$attr: int searchResultListItemHeight> = 2130772069;
+
+        <com.svenboy.helloworld2.R$attr: int searchDropdownBackground> = 2130772060;
+
+        <com.svenboy.helloworld2.R$attr: int queryHint> = 2130772059;
+
+        <com.svenboy.helloworld2.R$attr: int prompt> = 2130772049;
+
+        <com.svenboy.helloworld2.R$attr: int progressBarStyle> = 2130772020;
+
+        <com.svenboy.helloworld2.R$attr: int progressBarPadding> = 2130772022;
+
+        <com.svenboy.helloworld2.R$attr: int popupPromptView> = 2130772051;
+
+        <com.svenboy.helloworld2.R$attr: int popupMenuStyle> = 2130772041;
+
+        <com.svenboy.helloworld2.R$attr: int panelMenuListWidth> = 2130772042;
+
+        <com.svenboy.helloworld2.R$attr: int panelMenuListTheme> = 2130772043;
+
+        <com.svenboy.helloworld2.R$attr: int paddingStart> = 2130772024;
+
+        <com.svenboy.helloworld2.R$attr: int paddingEnd> = 2130772025;
+
+        <com.svenboy.helloworld2.R$attr: int navigationMode> = 2130772007;
+
+        <com.svenboy.helloworld2.R$attr: int logo> = 2130772013;
+
+        <com.svenboy.helloworld2.R$attr: int listPreferredItemPaddingRight> = 2130772000;
+
+        <com.svenboy.helloworld2.R$attr: int listPreferredItemPaddingLeft> = 2130771999;
+
+        <com.svenboy.helloworld2.R$attr: int listPreferredItemHeightSmall> = 2130771997;
+
+        <com.svenboy.helloworld2.R$attr: int listPreferredItemHeightLarge> = 2130771998;
+
+        <com.svenboy.helloworld2.R$attr: int listPreferredItemHeight> = 2130771996;
+
+        <com.svenboy.helloworld2.R$attr: int listPopupWindowStyle> = 2130772002;
+
+        <com.svenboy.helloworld2.R$attr: int listChoiceBackgroundIndicator> = 2130772044;
+
+        <com.svenboy.helloworld2.R$attr: int itemPadding> = 2130772023;
+
+        <com.svenboy.helloworld2.R$attr: int isLightTheme> = 2130772057;
+
+        <com.svenboy.helloworld2.R$attr: int initialActivityCount> = 2130772074;
+
+        <com.svenboy.helloworld2.R$attr: int indeterminateProgressStyle> = 2130772021;
+
+        <com.svenboy.helloworld2.R$attr: int iconifiedByDefault> = 2130772058;
+
+        <com.svenboy.helloworld2.R$attr: int icon> = 2130772012;
+
+        <com.svenboy.helloworld2.R$attr: int homeLayout> = 2130772019;
+
+        <com.svenboy.helloworld2.R$attr: int homeAsUpIndicator> = 2130771987;
+
+        <com.svenboy.helloworld2.R$attr: int height> = 2130772006;
+
+        <com.svenboy.helloworld2.R$attr: int expandActivityOverflowButtonDrawable> = 2130772075;
+
+        <com.svenboy.helloworld2.R$attr: int dropdownListPreferredItemHeight> = 2130772040;
+
+        <com.svenboy.helloworld2.R$attr: int dropDownListViewStyle> = 2130772001;
+
+        <com.svenboy.helloworld2.R$attr: int dividerVertical> = 2130771994;
+
+        <com.svenboy.helloworld2.R$attr: int dividerPadding> = 2130772054;
+
+        <com.svenboy.helloworld2.R$attr: int dividerHorizontal> = 2130771995;
+
+        <com.svenboy.helloworld2.R$attr: int divider> = 2130772014;
+
+        <com.svenboy.helloworld2.R$attr: int displayOptions> = 2130772008;
+
+        <com.svenboy.helloworld2.R$attr: int disableChildrenWhenDisabled> = 2130772052;
+
+        <com.svenboy.helloworld2.R$attr: int customNavigationLayout> = 2130772018;
+
+        <com.svenboy.helloworld2.R$attr: int buttonBarStyle> = 2130771991;
+
+        <com.svenboy.helloworld2.R$attr: int buttonBarButtonStyle> = 2130771992;
+
+        <com.svenboy.helloworld2.R$attr: int backgroundStacked> = 2130772016;
+
+        <com.svenboy.helloworld2.R$attr: int backgroundSplit> = 2130772017;
+
+        <com.svenboy.helloworld2.R$attr: int background> = 2130772015;
+
+        <com.svenboy.helloworld2.R$attr: int activityChooserViewStyle> = 2130772076;
+
+        <com.svenboy.helloworld2.R$attr: int actionViewClass> = 2130772047;
+
+        <com.svenboy.helloworld2.R$attr: int actionProviderClass> = 2130772048;
+
+        <com.svenboy.helloworld2.R$attr: int actionOverflowButtonStyle> = 2130771978;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeWebSearchDrawable> = 2130772037;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeStyle> = 2130772026;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeSplitBackground> = 2130772029;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeShareDrawable> = 2130772035;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeSelectAllDrawable> = 2130772034;
+
+        <com.svenboy.helloworld2.R$attr: int actionModePopupWindowStyle> = 2130772038;
+
+        <com.svenboy.helloworld2.R$attr: int actionModePasteDrawable> = 2130772033;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeFindDrawable> = 2130772036;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeCutDrawable> = 2130772031;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeCopyDrawable> = 2130772032;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeCloseDrawable> = 2130772030;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeCloseButtonStyle> = 2130772027;
+
+        <com.svenboy.helloworld2.R$attr: int actionModeBackground> = 2130772028;
+
+        <com.svenboy.helloworld2.R$attr: int actionMenuTextColor> = 2130771986;
+
+        <com.svenboy.helloworld2.R$attr: int actionMenuTextAppearance> = 2130771985;
+
+        <com.svenboy.helloworld2.R$attr: int actionLayout> = 2130772046;
+
+        <com.svenboy.helloworld2.R$attr: int actionDropDownStyle> = 2130772039;
+
+        <com.svenboy.helloworld2.R$attr: int actionButtonStyle> = 2130771990;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarWidgetTheme> = 2130771981;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarTabTextStyle> = 2130771977;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarTabStyle> = 2130771975;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarTabBarStyle> = 2130771976;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarStyle> = 2130771979;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarSplitStyle> = 2130771980;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarSize> = 2130771982;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarItemBackground> = 2130771984;
+
+        <com.svenboy.helloworld2.R$attr: int actionBarDivider> = 2130771983;
+
+        return;
+    }
+}

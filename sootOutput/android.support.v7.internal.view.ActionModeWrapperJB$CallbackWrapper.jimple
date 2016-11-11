@@ -1,0 +1,40 @@
+public class android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper extends android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper
+{
+
+    public void <init>(android.content.Context, android.support.v7.view.ActionMode$Callback)
+    {
+        android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper $r0;
+        android.content.Context $r1;
+        android.support.v7.view.ActionMode$Callback $r2;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper;
+
+        $r1 := @parameter0: android.content.Context;
+
+        $r2 := @parameter1: android.support.v7.view.ActionMode$Callback;
+
+        specialinvoke $r0.<android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper: void <init>(android.content.Context,android.support.v7.view.ActionMode$Callback)>($r1, $r2);
+
+        return;
+    }
+
+    protected android.support.v7.internal.view.ActionModeWrapper createActionModeWrapper(android.content.Context, android.view.ActionMode)
+    {
+        android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper $r0;
+        android.content.Context $r1;
+        android.view.ActionMode $r2;
+        android.support.v7.internal.view.ActionModeWrapperJB $r3;
+
+        $r0 := @this: android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper;
+
+        $r1 := @parameter0: android.content.Context;
+
+        $r2 := @parameter1: android.view.ActionMode;
+
+        $r3 = new android.support.v7.internal.view.ActionModeWrapperJB;
+
+        specialinvoke $r3.<android.support.v7.internal.view.ActionModeWrapperJB: void <init>(android.content.Context,android.view.ActionMode)>($r1, $r2);
+
+        return $r3;
+    }
+}

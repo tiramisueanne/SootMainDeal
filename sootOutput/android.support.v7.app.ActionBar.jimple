@@ -1,0 +1,230 @@
+public abstract class android.support.v7.app.ActionBar extends java.lang.Object
+{
+    public static final int DISPLAY_HOME_AS_UP;
+    public static final int DISPLAY_SHOW_CUSTOM;
+    public static final int DISPLAY_SHOW_HOME;
+    public static final int DISPLAY_SHOW_TITLE;
+    public static final int DISPLAY_USE_LOGO;
+    public static final int NAVIGATION_MODE_LIST;
+    public static final int NAVIGATION_MODE_STANDARD;
+    public static final int NAVIGATION_MODE_TABS;
+
+    public void <init>()
+    {
+        android.support.v7.app.ActionBar $r0;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public abstract void addOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
+
+    public abstract void addTab(android.support.v7.app.ActionBar$Tab);
+
+    public abstract void addTab(android.support.v7.app.ActionBar$Tab, int);
+
+    public abstract void addTab(android.support.v7.app.ActionBar$Tab, int, boolean);
+
+    public abstract void addTab(android.support.v7.app.ActionBar$Tab, boolean);
+
+    public abstract android.view.View getCustomView();
+
+    public abstract int getDisplayOptions();
+
+    public abstract int getHeight();
+
+    public abstract int getNavigationItemCount();
+
+    public abstract int getNavigationMode();
+
+    public abstract int getSelectedNavigationIndex();
+
+    public abstract android.support.v7.app.ActionBar$Tab getSelectedTab();
+
+    public abstract java.lang.CharSequence getSubtitle();
+
+    public abstract android.support.v7.app.ActionBar$Tab getTabAt(int);
+
+    public abstract int getTabCount();
+
+    public android.content.Context getThemedContext()
+    {
+        android.support.v7.app.ActionBar $r0;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        return null;
+    }
+
+    public abstract java.lang.CharSequence getTitle();
+
+    public abstract void hide();
+
+    public abstract boolean isShowing();
+
+    public abstract android.support.v7.app.ActionBar$Tab newTab();
+
+    public abstract void removeAllTabs();
+
+    public abstract void removeOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
+
+    public abstract void removeTab(android.support.v7.app.ActionBar$Tab);
+
+    public abstract void removeTabAt(int);
+
+    public abstract void selectTab(android.support.v7.app.ActionBar$Tab);
+
+    public abstract void setBackgroundDrawable(android.graphics.drawable.Drawable);
+
+    public abstract void setCustomView(int);
+
+    public abstract void setCustomView(android.view.View);
+
+    public abstract void setCustomView(android.view.View, android.support.v7.app.ActionBar$LayoutParams);
+
+    public abstract void setDisplayHomeAsUpEnabled(boolean);
+
+    public abstract void setDisplayOptions(int);
+
+    public abstract void setDisplayOptions(int, int);
+
+    public abstract void setDisplayShowCustomEnabled(boolean);
+
+    public abstract void setDisplayShowHomeEnabled(boolean);
+
+    public abstract void setDisplayShowTitleEnabled(boolean);
+
+    public abstract void setDisplayUseLogoEnabled(boolean);
+
+    public void setHomeActionContentDescription(int)
+    {
+        android.support.v7.app.ActionBar $r0;
+        int $i0;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        $i0 := @parameter0: int;
+
+        return;
+    }
+
+    public void setHomeActionContentDescription(java.lang.CharSequence)
+    {
+        android.support.v7.app.ActionBar $r0;
+        java.lang.CharSequence $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        $r1 := @parameter0: java.lang.CharSequence;
+
+        return;
+    }
+
+    public void setHomeAsUpIndicator(int)
+    {
+        android.support.v7.app.ActionBar $r0;
+        int $i0;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        $i0 := @parameter0: int;
+
+        return;
+    }
+
+    public void setHomeAsUpIndicator(android.graphics.drawable.Drawable)
+    {
+        android.support.v7.app.ActionBar $r0;
+        android.graphics.drawable.Drawable $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        $r1 := @parameter0: android.graphics.drawable.Drawable;
+
+        return;
+    }
+
+    public void setHomeButtonEnabled(boolean)
+    {
+        android.support.v7.app.ActionBar $r0;
+        boolean $z0;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        $z0 := @parameter0: boolean;
+
+        return;
+    }
+
+    public abstract void setIcon(int);
+
+    public abstract void setIcon(android.graphics.drawable.Drawable);
+
+    public abstract void setListNavigationCallbacks(android.widget.SpinnerAdapter, android.support.v7.app.ActionBar$OnNavigationListener);
+
+    public abstract void setLogo(int);
+
+    public abstract void setLogo(android.graphics.drawable.Drawable);
+
+    public abstract void setNavigationMode(int);
+
+    public abstract void setSelectedNavigationItem(int);
+
+    public void setSplitBackgroundDrawable(android.graphics.drawable.Drawable)
+    {
+        android.support.v7.app.ActionBar $r0;
+        android.graphics.drawable.Drawable $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        $r1 := @parameter0: android.graphics.drawable.Drawable;
+
+        return;
+    }
+
+    public void setStackedBackgroundDrawable(android.graphics.drawable.Drawable)
+    {
+        android.support.v7.app.ActionBar $r0;
+        android.graphics.drawable.Drawable $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBar;
+
+        $r1 := @parameter0: android.graphics.drawable.Drawable;
+
+        return;
+    }
+
+    public abstract void setSubtitle(int);
+
+    public abstract void setSubtitle(java.lang.CharSequence);
+
+    public abstract void setTitle(int);
+
+    public abstract void setTitle(java.lang.CharSequence);
+
+    public abstract void show();
+
+    public static void <clinit>()
+    {
+        <android.support.v7.app.ActionBar: int NAVIGATION_MODE_TABS> = 2;
+
+        <android.support.v7.app.ActionBar: int NAVIGATION_MODE_STANDARD> = 0;
+
+        <android.support.v7.app.ActionBar: int NAVIGATION_MODE_LIST> = 1;
+
+        <android.support.v7.app.ActionBar: int DISPLAY_USE_LOGO> = 1;
+
+        <android.support.v7.app.ActionBar: int DISPLAY_SHOW_TITLE> = 8;
+
+        <android.support.v7.app.ActionBar: int DISPLAY_SHOW_HOME> = 2;
+
+        <android.support.v7.app.ActionBar: int DISPLAY_SHOW_CUSTOM> = 16;
+
+        <android.support.v7.app.ActionBar: int DISPLAY_HOME_AS_UP> = 4;
+
+        return;
+    }
+}

@@ -1,0 +1,37 @@
+class android.support.v7.app.ActionBarImplICS$OnMenuVisibilityListenerWrapper extends java.lang.Object implements android.app.ActionBar$OnMenuVisibilityListener
+{
+    final android.support.v7.app.ActionBar$OnMenuVisibilityListener mWrappedListener;
+
+    public void <init>(android.support.v7.app.ActionBar$OnMenuVisibilityListener)
+    {
+        android.support.v7.app.ActionBarImplICS$OnMenuVisibilityListenerWrapper $r0;
+        android.support.v7.app.ActionBar$OnMenuVisibilityListener $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$OnMenuVisibilityListenerWrapper;
+
+        $r1 := @parameter0: android.support.v7.app.ActionBar$OnMenuVisibilityListener;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<android.support.v7.app.ActionBarImplICS$OnMenuVisibilityListenerWrapper: android.support.v7.app.ActionBar$OnMenuVisibilityListener mWrappedListener> = $r1;
+
+        return;
+    }
+
+    public void onMenuVisibilityChanged(boolean)
+    {
+        android.support.v7.app.ActionBarImplICS$OnMenuVisibilityListenerWrapper $r0;
+        boolean $z0;
+        android.support.v7.app.ActionBar$OnMenuVisibilityListener $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$OnMenuVisibilityListenerWrapper;
+
+        $z0 := @parameter0: boolean;
+
+        $r1 = $r0.<android.support.v7.app.ActionBarImplICS$OnMenuVisibilityListenerWrapper: android.support.v7.app.ActionBar$OnMenuVisibilityListener mWrappedListener>;
+
+        interfaceinvoke $r1.<android.support.v7.app.ActionBar$OnMenuVisibilityListener: void onMenuVisibilityChanged(boolean)>($z0);
+
+        return;
+    }
+}

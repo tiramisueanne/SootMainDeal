@@ -1,0 +1,419 @@
+class android.support.v7.app.ActionBarImplICS$TabWrapper extends android.support.v7.app.ActionBar$Tab implements android.app.ActionBar$TabListener
+{
+    private java.lang.CharSequence mContentDescription;
+    private android.support.v7.app.ActionBar$TabListener mTabListener;
+    private java.lang.Object mTag;
+    final android.app.ActionBar$Tab mWrappedTab;
+    final android.support.v7.app.ActionBarImplICS this$0;
+
+    public void <init>(android.support.v7.app.ActionBarImplICS, android.app.ActionBar$Tab)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.support.v7.app.ActionBarImplICS $r1;
+        android.app.ActionBar$Tab $r2;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: android.support.v7.app.ActionBarImplICS;
+
+        $r2 := @parameter1: android.app.ActionBar$Tab;
+
+        $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBarImplICS this$0> = $r1;
+
+        specialinvoke $r0.<android.support.v7.app.ActionBar$Tab: void <init>()>();
+
+        $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab> = $r2;
+
+        return;
+    }
+
+    public java.lang.CharSequence getContentDescription()
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        java.lang.CharSequence r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        r1 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: java.lang.CharSequence mContentDescription>;
+
+        return r1;
+    }
+
+    public android.view.View getCustomView()
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.view.View $r1;
+        android.app.ActionBar$Tab $r2;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        $r1 = virtualinvoke $r2.<android.app.ActionBar$Tab: android.view.View getCustomView()>();
+
+        return $r1;
+    }
+
+    public android.graphics.drawable.Drawable getIcon()
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.graphics.drawable.Drawable $r1;
+        android.app.ActionBar$Tab $r2;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        $r1 = virtualinvoke $r2.<android.app.ActionBar$Tab: android.graphics.drawable.Drawable getIcon()>();
+
+        return $r1;
+    }
+
+    public int getPosition()
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        int $i0;
+        android.app.ActionBar$Tab $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        $i0 = virtualinvoke $r1.<android.app.ActionBar$Tab: int getPosition()>();
+
+        return $i0;
+    }
+
+    public java.lang.Object getTag()
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        java.lang.Object r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        r1 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: java.lang.Object mTag>;
+
+        return r1;
+    }
+
+    public java.lang.CharSequence getText()
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        java.lang.CharSequence $r1;
+        android.app.ActionBar$Tab $r2;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        $r1 = virtualinvoke $r2.<android.app.ActionBar$Tab: java.lang.CharSequence getText()>();
+
+        return $r1;
+    }
+
+    public void onTabReselected(android.app.ActionBar$Tab, android.app.FragmentTransaction)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.app.ActionBar$Tab $r1;
+        android.app.FragmentTransaction $r2;
+        android.support.v7.app.ActionBar$TabListener $r3;
+        android.support.v4.app.FragmentTransaction $r4;
+        android.support.v7.app.ActionBarImplICS $r5;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: android.app.ActionBar$Tab;
+
+        $r2 := @parameter1: android.app.FragmentTransaction;
+
+        $r3 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBar$TabListener mTabListener>;
+
+        if $r2 == null goto label2;
+
+        $r5 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBarImplICS this$0>;
+
+        $r4 = virtualinvoke $r5.<android.support.v7.app.ActionBarImplICS: android.support.v4.app.FragmentTransaction getActiveTransaction()>();
+
+     label1:
+        interfaceinvoke $r3.<android.support.v7.app.ActionBar$TabListener: void onTabReselected(android.support.v7.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction)>($r0, $r4);
+
+        $r5 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBarImplICS this$0>;
+
+        virtualinvoke $r5.<android.support.v7.app.ActionBarImplICS: void commitActiveTransaction()>();
+
+        return;
+
+     label2:
+        $r4 = null;
+
+        goto label1;
+    }
+
+    public void onTabSelected(android.app.ActionBar$Tab, android.app.FragmentTransaction)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.app.ActionBar$Tab $r1;
+        android.app.FragmentTransaction $r2;
+        android.support.v7.app.ActionBar$TabListener $r3;
+        android.support.v4.app.FragmentTransaction $r4;
+        android.support.v7.app.ActionBarImplICS $r5;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: android.app.ActionBar$Tab;
+
+        $r2 := @parameter1: android.app.FragmentTransaction;
+
+        $r3 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBar$TabListener mTabListener>;
+
+        if $r2 == null goto label2;
+
+        $r5 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBarImplICS this$0>;
+
+        $r4 = virtualinvoke $r5.<android.support.v7.app.ActionBarImplICS: android.support.v4.app.FragmentTransaction getActiveTransaction()>();
+
+     label1:
+        interfaceinvoke $r3.<android.support.v7.app.ActionBar$TabListener: void onTabSelected(android.support.v7.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction)>($r0, $r4);
+
+        $r5 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBarImplICS this$0>;
+
+        virtualinvoke $r5.<android.support.v7.app.ActionBarImplICS: void commitActiveTransaction()>();
+
+        return;
+
+     label2:
+        $r4 = null;
+
+        goto label1;
+    }
+
+    public void onTabUnselected(android.app.ActionBar$Tab, android.app.FragmentTransaction)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.app.ActionBar$Tab $r1;
+        android.app.FragmentTransaction $r2;
+        android.support.v7.app.ActionBar$TabListener $r3;
+        android.support.v4.app.FragmentTransaction $r4;
+        android.support.v7.app.ActionBarImplICS $r5;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: android.app.ActionBar$Tab;
+
+        $r2 := @parameter1: android.app.FragmentTransaction;
+
+        $r3 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBar$TabListener mTabListener>;
+
+        if $r2 == null goto label2;
+
+        $r5 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBarImplICS this$0>;
+
+        $r4 = virtualinvoke $r5.<android.support.v7.app.ActionBarImplICS: android.support.v4.app.FragmentTransaction getActiveTransaction()>();
+
+     label1:
+        interfaceinvoke $r3.<android.support.v7.app.ActionBar$TabListener: void onTabUnselected(android.support.v7.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction)>($r0, $r4);
+
+        return;
+
+     label2:
+        $r4 = null;
+
+        goto label1;
+    }
+
+    public void select()
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.app.ActionBar$Tab $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        virtualinvoke $r1.<android.app.ActionBar$Tab: void select()>();
+
+        return;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setContentDescription(int)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        int $i0;
+        java.lang.CharSequence $r1;
+        android.support.v7.app.ActionBarImplICS $r2;
+        android.app.Activity $r3;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $i0 := @parameter0: int;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBarImplICS this$0>;
+
+        $r3 = $r2.<android.support.v7.app.ActionBarImplICS: android.app.Activity mActivity>;
+
+        $r1 = virtualinvoke $r3.<android.app.Activity: java.lang.CharSequence getText(int)>($i0);
+
+        $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: java.lang.CharSequence mContentDescription> = $r1;
+
+        return $r0;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setContentDescription(java.lang.CharSequence)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        java.lang.CharSequence $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: java.lang.CharSequence;
+
+        $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: java.lang.CharSequence mContentDescription> = $r1;
+
+        return $r0;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setCustomView(int)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        int $i0;
+        android.app.ActionBar$Tab $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $i0 := @parameter0: int;
+
+        $r1 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        virtualinvoke $r1.<android.app.ActionBar$Tab: android.app.ActionBar$Tab setCustomView(int)>($i0);
+
+        return $r0;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setCustomView(android.view.View)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.view.View $r1;
+        android.app.ActionBar$Tab $r2;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        virtualinvoke $r2.<android.app.ActionBar$Tab: android.app.ActionBar$Tab setCustomView(android.view.View)>($r1);
+
+        return $r0;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setIcon(int)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        int $i0;
+        android.app.ActionBar$Tab $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $i0 := @parameter0: int;
+
+        $r1 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        virtualinvoke $r1.<android.app.ActionBar$Tab: android.app.ActionBar$Tab setIcon(int)>($i0);
+
+        return $r0;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setIcon(android.graphics.drawable.Drawable)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        android.graphics.drawable.Drawable $r1;
+        android.app.ActionBar$Tab $r2;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: android.graphics.drawable.Drawable;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        virtualinvoke $r2.<android.app.ActionBar$Tab: android.app.ActionBar$Tab setIcon(android.graphics.drawable.Drawable)>($r1);
+
+        return $r0;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setTabListener(android.support.v7.app.ActionBar$TabListener)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0, $r3;
+        android.support.v7.app.ActionBar$TabListener $r1;
+        android.app.ActionBar$Tab $r2;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: android.support.v7.app.ActionBar$TabListener;
+
+        $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.support.v7.app.ActionBar$TabListener mTabListener> = $r1;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        if $r1 == null goto label2;
+
+        $r3 = $r0;
+
+     label1:
+        virtualinvoke $r2.<android.app.ActionBar$Tab: android.app.ActionBar$Tab setTabListener(android.app.ActionBar$TabListener)>($r3);
+
+        return $r0;
+
+     label2:
+        $r3 = null;
+
+        goto label1;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setTag(java.lang.Object)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        java.lang.Object $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: java.lang.Object mTag> = $r1;
+
+        return $r0;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setText(int)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        int $i0;
+        android.app.ActionBar$Tab $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $i0 := @parameter0: int;
+
+        $r1 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        virtualinvoke $r1.<android.app.ActionBar$Tab: android.app.ActionBar$Tab setText(int)>($i0);
+
+        return $r0;
+    }
+
+    public android.support.v7.app.ActionBar$Tab setText(java.lang.CharSequence)
+    {
+        android.support.v7.app.ActionBarImplICS$TabWrapper $r0;
+        java.lang.CharSequence $r1;
+        android.app.ActionBar$Tab $r2;
+
+        $r0 := @this: android.support.v7.app.ActionBarImplICS$TabWrapper;
+
+        $r1 := @parameter0: java.lang.CharSequence;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarImplICS$TabWrapper: android.app.ActionBar$Tab mWrappedTab>;
+
+        virtualinvoke $r2.<android.app.ActionBar$Tab: android.app.ActionBar$Tab setText(java.lang.CharSequence)>($r1);
+
+        return $r0;
+    }
+}

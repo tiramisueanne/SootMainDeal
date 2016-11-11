@@ -1,0 +1,480 @@
+class android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl extends java.lang.Object implements android.support.v4.view.ViewPropertyAnimatorCompat$ViewPropertyAnimatorCompatImpl
+{
+
+    void <init>()
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public void alpha(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void alphaBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void cancel(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        return;
+    }
+
+    public long getDuration(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        return 0L;
+    }
+
+    public android.view.animation.Interpolator getInterpolator(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        return null;
+    }
+
+    public long getStartDelay(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        return 0L;
+    }
+
+    public void rotation(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void rotationBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void rotationX(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void rotationXBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void rotationY(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void rotationYBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void scaleX(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void scaleXBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void scaleY(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void scaleYBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void setDuration(android.view.View, long)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        long $l0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $l0 := @parameter1: long;
+
+        return;
+    }
+
+    public void setInterpolator(android.view.View, android.view.animation.Interpolator)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        android.view.animation.Interpolator $r2;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: android.view.animation.Interpolator;
+
+        return;
+    }
+
+    public void setListener(android.view.View, android.support.v4.view.ViewPropertyAnimatorListener)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        android.support.v4.view.ViewPropertyAnimatorListener $r2;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: android.support.v4.view.ViewPropertyAnimatorListener;
+
+        return;
+    }
+
+    public void setStartDelay(android.view.View, long)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        long $l0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $l0 := @parameter1: long;
+
+        return;
+    }
+
+    public void start(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        return;
+    }
+
+    public void translationX(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void translationXBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void translationY(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void translationYBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void withEndAction(android.view.View, java.lang.Runnable)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        java.lang.Runnable $r2;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: java.lang.Runnable;
+
+        interfaceinvoke $r2.<java.lang.Runnable: void run()>();
+
+        return;
+    }
+
+    public void withLayer(android.view.View)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        return;
+    }
+
+    public void withStartAction(android.view.View, java.lang.Runnable)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        java.lang.Runnable $r2;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $r2 := @parameter1: java.lang.Runnable;
+
+        interfaceinvoke $r2.<java.lang.Runnable: void run()>();
+
+        return;
+    }
+
+    public void x(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void xBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void y(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+
+    public void yBy(android.view.View, float)
+    {
+        android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl $r0;
+        android.view.View $r1;
+        float $f0;
+
+        $r0 := @this: android.support.v4.view.ViewPropertyAnimatorCompat$BaseViewPropertyAnimatorCompatImpl;
+
+        $r1 := @parameter0: android.view.View;
+
+        $f0 := @parameter1: float;
+
+        return;
+    }
+}

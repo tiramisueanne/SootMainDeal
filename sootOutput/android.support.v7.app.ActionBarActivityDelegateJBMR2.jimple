@@ -1,0 +1,36 @@
+class android.support.v7.app.ActionBarActivityDelegateJBMR2 extends android.support.v7.app.ActionBarActivityDelegateJB
+{
+
+    void <init>(android.support.v7.app.ActionBarActivity)
+    {
+        android.support.v7.app.ActionBarActivityDelegateJBMR2 $r0;
+        android.support.v7.app.ActionBarActivity $r1;
+
+        $r0 := @this: android.support.v7.app.ActionBarActivityDelegateJBMR2;
+
+        $r1 := @parameter0: android.support.v7.app.ActionBarActivity;
+
+        specialinvoke $r0.<android.support.v7.app.ActionBarActivityDelegateJB: void <init>(android.support.v7.app.ActionBarActivity)>($r1);
+
+        return;
+    }
+
+    public android.support.v7.app.ActionBar createSupportActionBar()
+    {
+        android.support.v7.app.ActionBarActivityDelegateJBMR2 $r0;
+        android.support.v7.app.ActionBarImplJBMR2 $r1;
+        android.support.v7.app.ActionBarActivity $r2, $r3;
+
+        $r0 := @this: android.support.v7.app.ActionBarActivityDelegateJBMR2;
+
+        $r1 = new android.support.v7.app.ActionBarImplJBMR2;
+
+        $r2 = $r0.<android.support.v7.app.ActionBarActivityDelegateJBMR2: android.support.v7.app.ActionBarActivity mActivity>;
+
+        $r3 = $r0.<android.support.v7.app.ActionBarActivityDelegateJBMR2: android.support.v7.app.ActionBarActivity mActivity>;
+
+        specialinvoke $r1.<android.support.v7.app.ActionBarImplJBMR2: void <init>(android.app.Activity,android.support.v7.app.ActionBar$Callback)>($r2, $r3);
+
+        return $r1;
+    }
+}

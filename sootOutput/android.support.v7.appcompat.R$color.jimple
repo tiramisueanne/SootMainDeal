@@ -1,0 +1,31 @@
+public final class android.support.v7.appcompat.R$color extends java.lang.Object
+{
+    public static final int abc_search_url_text_holo;
+    public static final int abc_search_url_text_normal;
+    public static final int abc_search_url_text_pressed;
+    public static final int abc_search_url_text_selected;
+
+    public void <init>()
+    {
+        android.support.v7.appcompat.R$color $r0;
+
+        $r0 := @this: android.support.v7.appcompat.R$color;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void <clinit>()
+    {
+        <android.support.v7.appcompat.R$color: int abc_search_url_text_selected> = 2131165185;
+
+        <android.support.v7.appcompat.R$color: int abc_search_url_text_pressed> = 2131165186;
+
+        <android.support.v7.appcompat.R$color: int abc_search_url_text_normal> = 2131165184;
+
+        <android.support.v7.appcompat.R$color: int abc_search_url_text_holo> = 2131165188;
+
+        return;
+    }
+}
