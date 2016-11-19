@@ -25,21 +25,6 @@ public class sootTransformation {
 	Options.v().set_src_prec(Options.src_prec_apk);
 	Options.v().set_output_format(Options.output_format_jimple);
 	PackManager.v().getPack("jtp").add(new Transform("jtp.loopFinder", new LoopFinder()));
-		/*new BodyTransformer() {
-			
-			protected void internalTransform(final Body b, String phaseName, Map options) {
-				
-				Chain units = b.getUnits();
-				Iterator unitIt = units.snapshotIterator();
-				for ( u;nitIt; unitIt.hasNext(); ){
-					Unit u = unitIt.next();
-
-				}
-			b.validate();
-			}
-
-		}
-	));*/
 	soot.Main.main(args); // or Main.main(args); ????
 	}
 }
