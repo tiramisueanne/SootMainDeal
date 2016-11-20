@@ -18,7 +18,7 @@ import soot.jimple.InvokeStmt;
 import soot.jimple.Jimple;
 import soot.jimple.StringConstant;
 import soot.options.Options;
-import soot.jimple.toolkits.annotation.logic.*;
+//import soot.jimple.toolkits.annotation.logic.*;
 
 public class sootTransformation {
 	public static void main(String[] args){

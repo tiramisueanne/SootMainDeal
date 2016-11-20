@@ -1,3 +1,0 @@
-annotation interface  android.support.v4.view.ViewCompat$LayerType extends java.lang.Object implements java.lang.'annotation'.Annotation
-{
-}

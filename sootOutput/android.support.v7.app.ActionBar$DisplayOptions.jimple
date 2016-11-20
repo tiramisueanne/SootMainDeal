@@ -1,3 +1,0 @@
-annotation interface  android.support.v7.app.ActionBar$DisplayOptions extends java.lang.Object implements java.lang.'annotation'.Annotation
-{
-}
