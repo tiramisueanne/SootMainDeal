@@ -98,7 +98,6 @@ public class LoopFinder extends BodyTransformer {
                 Local tmpRef = addTmpRef(b);
 				Local tmpString = addTmpString(b);
 								
-
                 // for now just print out loops as sets of stmts
                 // insert "tmpRef = java.lang.System.out;" 
 				header.insertBefore(Jimple.v().newAssignStmt( 
