@@ -25,40 +25,29 @@ public class myLoopInstrument extends BodyTransformer {
         if(loops.isEmpty()) return;
 
         final PatchingChain<Unit> units = b.getUnits();
+        SootMethod ourMethod = new SootMethod(); //instantiate this properly
+        Local tmpRef = addTmpRef(b);  //I have no idea what this is supposed to be
 
         Iterator<Loop> lIt = loops.iterator();
         while(lIt.hasNext()){
             Loop loop = lIt.next();
             Stmt header = loop.getHead();
-Local tmpRef = addTmpRef(b);
-								Local tmpString = addTmpString(b);
-								
-								  // insert "tmpRef = java.lang.System.out;" 
-						        units.insertBefore(Jimple.v().newAssignStmt( 
-						                      tmpRef, Jimple.v().newStaticFieldRef( 
-						                      Scene.v().getField("<java.lang.System: java.io.PrintStream out>").makeRef())), header);
 
-						        // insert "tmpLong = 'HELLO';" 
-						        units.insertBefore(Jimple.v().newAssignStmt(tmpString, 
-						                      StringConstant.v("HELLO")), header);
-						        
-						        // insert "tmpRef.println(tmpString);" 
-						        SootMethod toCall = Scene.v().getSootClass("java.io.PrintStream").getMethod("void println(java.lang.String)");                    
-						        units.insertBefore(Jimple.v().newInvokeStmt(
-						                      Jimple.v().newVirtualInvokeExpr(tmpRef, toCall.makeRef(), tmpString)), header);
-						        
-						        //check that we did not mess up the Jimple
-//						        b.validate();
-
-/*            System.out.println("Head is class: "+header.getClass());
+/* Checks to see if I can cast stuff
+ 
+            System.out.println("Head is class: "+header.getClass());
 
             if( !header instanceof IfStmt) {System.out.println("header isn't an if statement, help");
+*/
+
             IfStmt head = (IfStmt) header; //don't know if this is safe/works
             if(!head.isNull());
             Value cond = head.getCondition(); 
             //insert the statement
-            units.insertBefore(Jimple.v().newInvokeStmt(,header));
-*/
+            units.insertBefore(Jimple.v().newInvokeStmt(
+                Jimple.v().newVirtualInvokeExpr( tmpref, ourMethod.makeRef(), cond)
+            ,header));
+
         }   
     }
 
