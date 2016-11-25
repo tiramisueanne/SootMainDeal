@@ -16,6 +16,18 @@ public class myLoopInstrument extends BodyTransformer {
 
     public static myLoopInstrument v() {return instance;}
     protected void internalTransform(Body b, String phaseName, Map options){
+        Scene.v().addBasicClass("java.lang.Object");
+
+        SootClass sClass = new SootClass("Test", Modifier.PUBLIC);
+        sClass.setSuperclass(Scene.v().getSootClass("java.lang.Object"));
+        Scene.v().addClass(sClass);
+
+        SootMethod ourMethod = new SootMethod("ourMethod",
+            Arrays.asList(new Type[] {ArrayType.v(RefType.v("java.lang.Object"),1)}),
+            VoidType.v(), Modifier.PUBLIC);
+        sClass.addMethod(ourMethod);
+ 
+
     
         LoopFinder lf = new LoopFinder();
         lf.transform(b);
@@ -25,7 +37,7 @@ public class myLoopInstrument extends BodyTransformer {
         if(loops.isEmpty()) return;
 
         final PatchingChain<Unit> units = b.getUnits();
-        SootMethod ourMethod = Scene.v().getMethod("<Test: void ourMethod(java.lang.Object>");
+        //SootMethod ourMethod = Scene.v().getMethod("<Test: void ourMethod(java.lang.Object>");
         
         //make a Test object to call ourMethod() on
         Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("Test"));
