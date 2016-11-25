@@ -25,10 +25,14 @@ public class myLoopInstrument extends BodyTransformer {
         if(loops.isEmpty()) return;
 
         final PatchingChain<Unit> units = b.getUnits();
-        SootMethod ourMethod = new SootMethod(); //instantiate this properly
+        SootMethod ourMethod = new SootMethod("ourMethod", Arrays.asList(new Type[] {ArrayType.v(RefType.v("java.lang.String"), 1)}),
+            VoidType.v(), Modifier.PUBLIC | Modifier.STATIC); //instantiate this properly
+        //tmpRef essentially contained a reference to something
+        //in the case of wanting to inject stuff, this tmpRef would contain
+        //'System.out'
         Local tmpRef = addTmpRef(b);  //I have no idea what this is supposed to be
 
-        Iterator<Loop> lIt = loops.iterator();
+        Iterator<Loop> lIt = loops.iterator(); //liiiiiit
         while(lIt.hasNext()){
             Loop loop = lIt.next();
             Stmt header = loop.getHead();
@@ -41,13 +45,12 @@ public class myLoopInstrument extends BodyTransformer {
 */
 
             IfStmt head = (IfStmt) header; //don't know if this is safe/works
-            if(!head.isNull());
+            //if(!head.isNull());
             Value cond = head.getCondition(); 
             //insert the statement
-            units.insertBefore(Jimple.v().newInvokeStmt(
-                Jimple.v().newVirtualInvokeExpr( tmpref, ourMethod.makeRef(), cond)
-            ,header));
-
+            
+            units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
+                tmpRef, ourMethod.makeRef(), cond)), head);
         }   
     }
 
