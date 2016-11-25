@@ -25,12 +25,11 @@ public class myLoopInstrument extends BodyTransformer {
         if(loops.isEmpty()) return;
 
         final PatchingChain<Unit> units = b.getUnits();
-        SootMethod ourMethod = new SootMethod("ourMethod", Arrays.asList(new Type[] {ArrayType.v(RefType.v("java.lang.String"), 1)}),
-            VoidType.v(), Modifier.PUBLIC | Modifier.STATIC); //instantiate this properly
-        //tmpRef essentially contained a reference to something
-        //in the case of wanting to inject stuff, this tmpRef would contain
-        //'System.out'
-        Local tmpRef = addTmpRef(b);  //I have no idea what this is supposed to be
+        SootMethod ourMethod = Scene.v().getMethod("<Test: void ourMethod(java.lang.Object>");
+        
+        //make a Test object to call ourMethod() on
+        Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("Test"));
+        b.getLocals().add(tmpRef);
 
         Iterator<Loop> lIt = loops.iterator(); //liiiiiit
         while(lIt.hasNext()){
@@ -53,19 +52,4 @@ public class myLoopInstrument extends BodyTransformer {
                 tmpRef, ourMethod.makeRef(), cond)), head);
         }   
     }
-
-    private static Local addTmpRef(Body body)
-    {
-        Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("java.io.PrintStream"));
-        body.getLocals().add(tmpRef);
-        return tmpRef;
-    }
-    
-    private static Local addTmpString(Body body)
-    {
-        Local tmpString = Jimple.v().newLocal("tmpString", RefType.v("java.lang.String")); 
-        body.getLocals().add(tmpString);
-        return tmpString;
-    }
- 
 }
