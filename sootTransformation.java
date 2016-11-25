@@ -27,18 +27,18 @@ public class sootTransformation {
 	Options.v().set_src_prec(Options.src_prec_apk);
 	Options.v().set_output_format(Options.output_format_dex);
 
-        Scene.v().addBasicClass("java.io.PrintStream",SootClass.SIGNATURES);
-        Scene.v().addBasicClass("java.lang.System",SootClass.SIGNATURES);
+    Scene.v().addBasicClass("java.io.PrintStream",SootClass.SIGNATURES);
+    Scene.v().addBasicClass("java.lang.System",SootClass.SIGNATURES);
 
-        Scene.v().loadClassAndSupport("java.lang.Object");
-        SootClass sClass = new SootClass("Test", Modifier.PUBLIC);
-        sClass.setSuperclass(Scene.v().getSootClass("java.lang.Object"));
-        Scene.v().addClass(sClass);
+    Scene.v().loadClassAndSupport("java.lang.Object");
+    SootClass sClass = new SootClass("Test", Modifier.PUBLIC);
+    sClass.setSuperclass(Scene.v().getSootClass("java.lang.Object"));
+    Scene.v().addClass(sClass);
 
-        SootMethod ourMethod = new SootMethod("ourMethod",
-            Arrays.asList(new Type[] {ArrayType.v(RefType.v("java.lang.Object"),1)}),
+    SootMethod ourMethod = new SootMethod("ourMethod",
+    Arrays.asList(new Type[] {ArrayType.v(RefType.v("java.lang.Object"),1)}),
             VoidType.v(), Modifier.PUBLIC);
-        sClass.addMethod(ourMethod);
+    sClass.addMethod(ourMethod);
         
 	PackManager.v().getPack("jtp").add(new Transform("jtp.myLoopInstrument", myLoopInstrument.v()));
         
