@@ -25,10 +25,12 @@ public class myLoopInstrument extends BodyTransformer {
         if(loops.isEmpty()) return;
 
         final PatchingChain<Unit> units = b.getUnits();
-        SootMethod ourMethod = Scene.v().getMethod("<Test: void ourMethod(java.lang.Object>");
+        SootClass c = Scene.v().getSootClass("OuterClass");
+        SootMethod ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(java.lang.Object)");
         
         //make a Test object to call ourMethod() on
-        Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("Test"));
+        Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("OuterClass"));
         b.getLocals().add(tmpRef);
 
         Iterator<Loop> lIt = loops.iterator(); //liiiiiit
@@ -39,17 +41,15 @@ public class myLoopInstrument extends BodyTransformer {
 /* Checks to see if I can cast stuff
  
             System.out.println("Head is class: "+header.getClass());
-
-            if( !header instanceof IfStmt) {System.out.println("header isn't an if statement, help");
 */
+            if(header instanceof IfStmt) {
+                System.out.println("If statement found");
+                //IfStmt head = (IfStmt) header;
+                List<Value> cond = head.getArgs(); 
+                units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
+                    tmpRef, ourMethod.makeRef(), cond)), head);
+            }
 
-            IfStmt head = (IfStmt) header; //don't know if this is safe/works
-            //if(!head.isNull());
-            Value cond = head.getCondition(); 
-            //insert the statement
-            
-            units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
-                tmpRef, ourMethod.makeRef(), cond)), head);
         }   
     }
 }
