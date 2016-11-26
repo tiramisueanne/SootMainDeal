@@ -42,6 +42,8 @@ public class myLoopInstrument extends BodyTransformer {
                                     "void ourMethod(java.lang.Object)");
        
         //make a Test object to call ourMethod() on
+        //JIA PLS IT'S THIS THING I HAVE TO HAVE A LOCAL TO CREATE A NEW
+        //INVOKESTMT how do I do this with a static method? 
         Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("OuterClass"));
         b.getLocals().add(tmpRef);
 
