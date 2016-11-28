@@ -18,17 +18,6 @@ public class myLoopInstrument extends BodyTransformer {
     protected void internalTransform(Body b, String phaseName, Map options){
         Scene.v().addBasicClass("java.lang.Object");
 
-        SootClass sClass = new SootClass("Test", Modifier.PUBLIC);
-        sClass.setSuperclass(Scene.v().getSootClass("java.lang.Object"));
-        Scene.v().addClass(sClass);
-
-        SootMethod ourMethod = new SootMethod("ourMethod",
-            Arrays.asList(new Type[] {ArrayType.v(RefType.v("java.lang.Object"),1)}),
-            VoidType.v(), Modifier.PUBLIC);
-        sClass.addMethod(ourMethod);
- 
-
-    
         LoopFinder lf = new LoopFinder();
         lf.transform(b);
 
@@ -43,7 +32,7 @@ public class myLoopInstrument extends BodyTransformer {
        
         //make a Test object to call ourMethod() on
         //JIA PLS IT'S THIS THING I HAVE TO HAVE A LOCAL TO CREATE A NEW
-        //INVOKESTMT how do I do this with a static method? 
+        //INVOKESTMT IN THE WHILE LOOP how do I do this? Is this right?
         Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("OuterClass"));
         b.getLocals().add(tmpRef);
 
@@ -59,7 +48,8 @@ public class myLoopInstrument extends BodyTransformer {
             if(header instanceof IfStmt) {
                 System.out.println("If statement found");
                 //IfStmt head = (IfStmt) header;
-                List<Value> cond = head.getArgs(); 
+                List<Value> cond = header.getArgs(); 
+                //this invoke stmt!
                 units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
                     tmpRef, ourMethod.makeRef(), cond)), head);
             }
