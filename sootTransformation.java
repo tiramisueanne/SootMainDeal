@@ -31,7 +31,9 @@ public class sootTransformation {
     //Options.v().set_soot_classpath("./soot-trunk.jar:./:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:./platforms/android--1/android.jar");
     Scene.v().addBasicClass("java.io.PrintStream",SootClass.SIGNATURES);
     Scene.v().addBasicClass("java.lang.System",SootClass.SIGNATURES);
-    Scene.v().addBasicClass("OuterClass");    
+    Scene.v().addBasicClass("OuterClass");   
+    SootClass c = Scene.v().getSootClass("OuterClass");
+    c.setApplicationClass();
 
 	PackManager.v().getPack("jtp").add(new Transform("jtp.myLoopInstrument", myLoopInstrument.v()));
         
