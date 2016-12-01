@@ -48,10 +48,13 @@ public class myLoopInstrument extends BodyTransformer {
             if(header instanceof IfStmt) {
                 System.out.println("If statement found");
                 IfStmt head = (IfStmt) header;
-                Value cond = head.getCondition(); 
+                ConditionExpr cond = (ConditionExpr)head.getCondition();
+                System.out.println("cond class is: "+ cond.getClass());
+                Value op1 = cond.getOp1();
+                System.out.println("op1: "+op1); 
                 //this invoke stmt!
                 units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
-                    tmpRef, ourMethod.makeRef(), cond)), head);
+                    tmpRef, ourMethod.makeRef(), op1)), head);
             }
 
         }   
