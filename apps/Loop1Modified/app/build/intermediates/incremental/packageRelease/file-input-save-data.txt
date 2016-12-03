@@ -1,0 +1,33 @@
+#Internal package file, do not edit.
+#Sat Dec 03 14:50:00 CST 2016
+2.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
+5.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/AndroidManifest.xml
+5.set=ANDROID_RESOURCE
+3.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+6.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/res/menu/activity_loop_example1.xml
+2.set=DEX
+4.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+7.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/res/layout/activity_loop_example1.xml
+7.set=ANDROID_RESOURCE
+count=10
+0.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/resources.arsc
+5.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+8.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/res/drawable-mdpi-v4/ic_launcher.png
+4.set=ANDROID_RESOURCE
+6.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+1.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/res/menu-v11/activity_loop_example1.xml
+9.set=ANDROID_RESOURCE
+9.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/res/drawable-xxhdpi-v4/ic_launcher.png
+1.set=ANDROID_RESOURCE
+7.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+2.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex
+6.set=ANDROID_RESOURCE
+0.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+8.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+3.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/res/drawable-xhdpi-v4/ic_launcher.png
+3.set=ANDROID_RESOURCE
+1.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+9.base=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_
+4.file=/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/resources-release.ap_/res/drawable-hdpi-v4/ic_launcher.png
+8.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE

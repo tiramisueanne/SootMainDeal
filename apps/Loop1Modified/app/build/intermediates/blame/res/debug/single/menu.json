@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/ekaminsky/Desktop/Security/FlowDroid/Sample Apps/Loop1Modified/app/build/intermediates/res/merged/debug/menu/activity_loop_example1.xml",
+        "source": "/Users/ekaminsky/Desktop/Security/FlowDroid/Sample Apps/Loop1Modified/app/src/main/res/menu/activity_loop_example1.xml"
+    },
+    {
+        "merged": "/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/build/intermediates/res/merged/debug/menu/activity_loop_example1.xml",
+        "source": "/Users/ekaminsky/Desktop/Security/SootMainDeal/apps/Loop1Modified/app/src/main/res/menu/activity_loop_example1.xml"
+    }
+]
