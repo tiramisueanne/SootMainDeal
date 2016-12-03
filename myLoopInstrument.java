@@ -30,21 +30,14 @@ public class myLoopInstrument extends BodyTransformer {
         SootMethod ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
                                     "void ourMethod(java.lang.Object)");
        
-        //make a Test object to call ourMethod() on
-        //JIA PLS IT'S THIS THING I HAVE TO HAVE A LOCAL TO CREATE A NEW
-        //INVOKESTMT IN THE WHILE LOOP how do I do this? Is this right?
         Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("OuterClass"));
         b.getLocals().add(tmpRef);
 
-        Iterator<Loop> lIt = loops.iterator(); //liiiiiit
+        Iterator<Loop> lIt = loops.iterator();
         while(lIt.hasNext()){
             Loop loop = lIt.next();
             Stmt header = loop.getHead();
-
-/* Checks to see if I can cast stuff
  
-            System.out.println("Head is class: "+header.getClass());
-*/
             if(header instanceof IfStmt) {
                 //System.out.println("If statement found");
                 IfStmt head = (IfStmt) header;
@@ -54,8 +47,8 @@ public class myLoopInstrument extends BodyTransformer {
                     //System.out.println("cond class is: "+ condEx.getClass());
                     Value op1 = condEx.getOp1();
                     Value op2 = condEx.getOp2(); //do I need to check if one of these is a constant?
-                    System.out.println("op1: "+op1+", op2: "+op2); 
-                    //this invoke stmt!
+                    System.out.println("op1: "+op1+", type: "+op1.getType()+", op2: "+op2+", type:"+op2.getType()); 
+                    
                     units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
                         tmpRef, ourMethod.makeRef(), op1)), head);
                     
@@ -65,13 +58,13 @@ public class myLoopInstrument extends BodyTransformer {
                 else {
                     System.out.println("HELP CONDITION IS NOT A CONDITIONEXPR, fix");
                     System.out.println("cond is: "+cond.getClass()+": "+cond);
-                    System.exit(1);               
+                    //System.exit(1);               
                 }
             }
             else {
                 System.out.println("HELP HEADER IS NOT AN IF STATEMENT, fix it");
                 System.out.println("header is: "+header.getClass()+": "+header);
-                System.exit(2);
+                //System.exit(2);
             }
 
         }   
