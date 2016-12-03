@@ -10,7 +10,7 @@ An extension to Soot which allows FlowDroid to recognize loop parameters and con
 http://stackoverflow.com/questions/16709848/build-unsigned-apk-file-with-android-studio
 
 ## Soot ##
-1) Change the path of your Java rt.jar in the Options.v().set_soot_classpath line of sootTransformation.java  
+1) Change the path of your Java rt.jar in the `Options.v().set_soot_classpath` line of sootTransformation.java  
 2) To Compile (in soot directory)
 ```
 javac -cp soot-trunk.jar sootTransformation.java myLoopInstrument.java OuterClass.java
@@ -36,7 +36,9 @@ java -cp ./soot-trunk.jar:./:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/C
 
 ## FlowDroid ##
 1) To Run (in top-level directory)
+```
 java -jar flowdroid/FlowDroid.jar path_to_apk.apk path_to_android_sdk
+```
 
 2) 
 
