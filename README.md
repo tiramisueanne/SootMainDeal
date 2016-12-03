@@ -44,7 +44,7 @@ java -jar flowdroid/FlowDroid.jar path_to_apk.apk path_to_android_sdk
 
 ### Example Run (in top-level directory) ###
 ```
-java -jar flowdroid/FlowDroid.jar apps/Loop1Modified.apk /Users/ekaminsky/Library/Android/sdk
+java -jar flowdroid/FlowDroid.jar apps/Loop1NewAPK.apk /Users/ekaminsky/Library/Android/sdk
 ```
 
 
