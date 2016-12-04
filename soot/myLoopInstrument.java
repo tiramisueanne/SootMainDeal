@@ -27,6 +27,7 @@ public class myLoopInstrument extends BodyTransformer {
 
         final PatchingChain<Unit> units = b.getUnits();
         SootClass c = Scene.v().getSootClass("java.lang.System");
+        c.setApplicationClass();
         SootMethod ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
                                     "void ourMethod(java.lang.Object)");
         SootMethod ourMethodInt = Scene.v().getSootClass("OuterClass").getMethod("void ourMethod(int)");
