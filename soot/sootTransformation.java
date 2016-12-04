@@ -25,10 +25,10 @@ import soot.jimple.toolkits.annotation.logic.*;
 
 public class sootTransformation {
     public static void main(String[] args) {
-        String path_to_rt_jar = "/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar";
+        String path_to_rt_jar = "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar";
 
         Options.v().set_src_prec(Options.src_prec_apk);
-	Options.v().set_output_format(Options.output_format_dex);
+		Options.v().set_output_format(Options.output_format_dex);
 
         //Options.v().set_allow_phantom_refs(true); 
 
@@ -40,9 +40,9 @@ public class sootTransformation {
         //SootClass c = Scene.v().getSootClass("java.lang.System");
         //c.setApplicationClass();
 
-	PackManager.v().getPack("jtp").add(new Transform("jtp.myLoopInstrument", myLoopInstrument.v()));
+		PackManager.v().getPack("jtp").add(new Transform("jtp.myLoopInstrument", myLoopInstrument.v()));
         
-	soot.Main.main(args); // or Main.main(args); ????
+		soot.Main.main(args); // or Main.main(args); ????
     }
 }
 
