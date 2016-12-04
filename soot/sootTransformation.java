@@ -25,7 +25,7 @@ import soot.jimple.toolkits.annotation.logic.*;
 
 public class sootTransformation {
     public static void main(String[] args) {
-        String path_to_rt_jar = "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar";
+        String path_to_rt_jar = "/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar";
 
         Options.v().set_src_prec(Options.src_prec_apk);
 	Options.v().set_output_format(Options.output_format_dex);
@@ -35,7 +35,7 @@ public class sootTransformation {
         Options.v().set_soot_classpath("./soot-trunk.jar:./:" + path_to_rt_jar + ":./platforms/android--1/android.jar");
         Scene.v().addBasicClass("java.io.PrintStream", SootClass.SIGNATURES);
         Scene.v().addBasicClass("java.lang.System", SootClass.SIGNATURES);
-        Scene.v().addBasicClass("OuterClass", SootClass.SIGNATURES);   
+        Scene.v().addBasicClass("OuterClass", SootClass.BODIES);   
 
         //SootClass c = Scene.v().getSootClass("java.lang.System");
         //c.setApplicationClass();
