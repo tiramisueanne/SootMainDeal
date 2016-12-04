@@ -6,4 +6,9 @@ public class OuterClass {
         //does nothing!! Wow!
         return;
     }
+
+    //covering primitives
+    public void ourMethod(int var){
+        return;
+    }
 }

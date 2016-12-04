@@ -30,7 +30,7 @@ public class sootTransformation {
 
         //Options.v().set_allow_phantom_refs(true); 
 
-        Options.v().set_soot_classpath("./soot-trunk.jar:./:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:./platforms/android--1/android.jar");
+        Options.v().set_soot_classpath("./soot-trunk.jar:./:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:./platforms/android--1/android.jar");
         Scene.v().addBasicClass("java.io.PrintStream",SootClass.SIGNATURES);
         Scene.v().addBasicClass("java.lang.System",SootClass.SIGNATURES);
         Scene.v().addBasicClass("OuterClass", SootClass.SIGNATURES);   

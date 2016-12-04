@@ -29,6 +29,7 @@ public class myLoopInstrument extends BodyTransformer {
         SootClass c = Scene.v().getSootClass("java.lang.System");
         SootMethod ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
                                     "void ourMethod(java.lang.Object)");
+        SootMethod ourMethodInt = Scene.v().getSootClass("OuterClass").getMethod("void ourMethod(int)");
        
         Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("OuterClass"));
         b.getLocals().add(tmpRef);
@@ -49,12 +50,43 @@ public class myLoopInstrument extends BodyTransformer {
                     Value op2 = condEx.getOp2(); //do I need to check if one of these is a constant?
                     System.out.println("op1: "+op1+", type: "+op1.getType()+", op2: "+op2+", type:"+op2.getType()); 
                     
+                    Type t1 = op1.getType();
+                    if(t1 instanceof PrimType){
+                        if(t1 instanceof IntType){
+                            units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
+                            tmpRef, ourMethodInt.makeRef(), op1)), head); 
+                            System.out.println("Invoking int version");
+                        }
+                        else {
+                            System.out.println("op1 is unsuportted Primtype "+t1.getClass());
+                        }
+                    } else if (t1 instanceof RefLikeType) {
+                    
                     units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
                         tmpRef, ourMethod.makeRef(), op1)), head);
+                   } else {
+                       System.out.println("op1 unknown type "+op1.getClass());
+                   }
+
+
+                   Type t2 = op2.getType();
+                   if(t2 instanceof PrimType){
+                        if(t2 instanceof IntType){
+                            units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
+                            tmpRef, ourMethodInt.makeRef(), op2)), head); 
+                            System.out.println("Invoking int version");
+                        }
+                        else {
+                            System.out.println("op2 is unsuportted Primtype "+t2.getClass());
+                        }
+                    } else if (t2 instanceof RefLikeType) {
                     
                     units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
                         tmpRef, ourMethod.makeRef(), op2)), head);
-                    }
+                   } else {
+                       System.out.println("op2 unknown type "+op2.getClass());
+                   }
+                }
                 else {
                     System.out.println("HELP CONDITION IS NOT A CONDITIONEXPR, fix");
                     System.out.println("cond is: "+cond.getClass()+": "+cond);

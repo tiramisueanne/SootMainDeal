@@ -26,6 +26,7 @@ java -cp ./soot-trunk.jar:./:path_to_java_rt.jar:./platforms sootTransformation 
 
 ### Possible Java rt.jar locations ###
 * /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar [linux]
+* /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar [UT lab computers]
 * /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar [macOS]
 * $(/usr/libexec/java_home)/jre/lib/rt.jar [works on bash shell in macOS]
 
