@@ -24,13 +24,13 @@ java -cp ./soot-trunk.jar:./:path_to_java_rt.jar:./platforms sootTransformation 
 4) Get your new APK file from the newly created /soot/sootOutput directory  
 5) If you would like to run Soot again, remove the /soot/sootOutput directory (Soot does not like overwriting files)
 
-### Possible Java rt.jar locations ###
+#### Possible Java rt.jar locations ####
 * /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar [Linux]
 * /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar [UT lab computers]
 * /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar [macOS]
 * $(/usr/libexec/java_home)/jre/lib/rt.jar [works on bash shell in macOS]
 
-### Example Compilation & Run (in /soot directory) ###
+#### Example Compilation & Run (in /soot directory) ####
 ```
 javac -cp soot-trunk.jar sootTransformation.java myLoopInstrument.java OuterClass.java
 
@@ -72,19 +72,19 @@ Found a flow to sink virtualinvoke $rX.<sink_class: return_type sink_method(arg_
 
 FlowDroid will create its own empty /sootOuput directory which can be ignored for the purposes of this analysis.
 
-### Example Run (in top-level directory) ###
+#### Example Run (in top-level directory) ####
 ```
 java -jar flowdroid/FlowDroid.jar apps/Loop1NewAPK.apk /Users/ekaminsky/Library/Android/sdk
 ```
 
 ## Notes ##
 
-The test app used throughout the previous examples can be found in apps/Loop1Modified. It builds off of the Loop1 sample code in DroidBench (https://github.com/secure-software-engineering/DroidBench), which identifies the following sink.
+The test app used throughout the previous examples can be found in apps/Loop1Modified. It builds off of the Loop1 sample code available in DroidBench (https://github.com/secure-software-engineering/DroidBench), which identifies the following sink.
 ```
 <android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_
 ```
 
-To limit the analysis to just our contributions, this sink can be removed from SourcesAndSinks.txt
+To limit the analysis to just our contributions, this sink was removed from SourcesAndSinks.txt
 
 
 
