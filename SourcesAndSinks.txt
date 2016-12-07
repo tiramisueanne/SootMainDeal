@@ -231,5 +231,7 @@
 
 
 <OuterClass: void ourMethod(java.lang.Object)> -> _SINK_
+<OuterClass: void ourMethod(int)> -> _SINK_
+
 
 

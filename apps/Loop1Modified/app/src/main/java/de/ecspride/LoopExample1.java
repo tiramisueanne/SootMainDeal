@@ -26,11 +26,13 @@ public class LoopExample1 extends Activity {
 
         /* Our Sinks */
 
-        for (int i = 0; i < obfuscated.length(); i++)
+        int tainted = obfuscated.length();
+
+        for (int i = 0; i < tainted ; i++)
             System.out.println("I'm a for-loop sink!");
 
         int j = 0;
-        while (j < obfuscated.length()) {
+        while (j < tainted) {
             System.out.println("I'm a while-loop sink!");
             j++;
         }
@@ -39,7 +41,7 @@ public class LoopExample1 extends Activity {
         do {
             System.out.println("I'm a do-while-loop sink!");
             k++;
-        } while (k < obfuscated.length());
+        } while (k < tainted);
 
         if (obfuscated.charAt(0) == 'a')
             System.out.println("I start with an 'a'!");
