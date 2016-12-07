@@ -38,11 +38,14 @@ public class myLoopInstrument extends BodyTransformer {
         Iterator<Loop> lIt = loops.iterator();
         while(lIt.hasNext()){
             Loop loop = lIt.next();
-            Stmt header = loop.getHead();
+            Collection<Stmt> exits = loop.getLoopExits();
+            Iterator<Stmt> eIt = exits.iterator();
+            while(eIt.hasNext()){
+            Stmt ex = eIt.next();
  
-            if(header instanceof IfStmt) {
+            if(ex instanceof IfStmt) {
                 //System.out.println("If statement found");
-                IfStmt head = (IfStmt) header;
+                IfStmt head = (IfStmt) ex;
                 Value cond = head.getCondition();
                 if(cond instanceof ConditionExpr){
                     ConditionExpr condEx = (ConditionExpr)head.getCondition();
@@ -96,8 +99,9 @@ public class myLoopInstrument extends BodyTransformer {
             }
             else {
                 System.out.println("HELP HEADER IS NOT AN IF STATEMENT, fix it");
-                System.out.println("header is: "+header.getClass()+": "+header);
+                System.out.println("header is: "+ex.getClass()+": "+ex);
                 //System.exit(2);
+            }
             }
 
         }   
