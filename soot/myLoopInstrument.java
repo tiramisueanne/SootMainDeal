@@ -60,8 +60,8 @@ public class myLoopInstrument extends BodyTransformer {
                }
           }
           else {
-                System.out.println("HELP HEADER IS NOT AN IF STATEMENT, fix it");
-                System.out.println("header is: "+ex.getClass()+": "+ex);
+                //System.out.println("HELP HEADER IS NOT AN IF STATEMENT, fix it");
+                //System.out.println("header is: "+ex.getClass()+": "+ex);
                 //System.exit(2);
                 // Ignore JExitMonitorStmt, JEnterMonitorStmt, JAssignStmt, JInvokeStmt, JGotoStmt, 
           }
