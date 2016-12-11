@@ -22,7 +22,7 @@ public class LoopExample1 extends Activity {
 		
 		SmsManager sm = SmsManager.getDefault();
 
-		sm.sendTextMessage("+49 1234", null, obfuscated, null, null); // Default sink
+		sm.sendTextMessage("+49 1234", null, obfuscated, null, null); // Sink
 
         /* Our Sinks */
 

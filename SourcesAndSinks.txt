@@ -232,6 +232,12 @@
 
 <OuterClass: void ourMethod(java.lang.Object)> -> _SINK_
 <OuterClass: void ourMethod(int)> -> _SINK_
-
+<OuterClass: void ourMethod(double)> -> _SINK_
+<OuterClass: void ourMethod(float)> -> _SINK_
+<OuterClass: void ourMethod(long)> -> _SINK_
+<OuterClass: void ourMethod(short)> -> _SINK_
+<OuterClass: void ourMethod(char)> -> _SINK_
+<OuterClass: void ourMethod(byte)> -> _SINK_
+<OuterClass: void ourMethod(boolean)> -> _SINK_
 
 
