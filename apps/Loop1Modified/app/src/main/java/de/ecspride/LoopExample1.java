@@ -22,7 +22,7 @@ public class LoopExample1 extends Activity {
 		
 		SmsManager sm = SmsManager.getDefault();
 
-		sm.sendTextMessage("+49 1234", null, obfuscated, null, null); // Default sink
+		sm.sendTextMessage("+49 1234", null, obfuscated, null, null); // Sink
 
         /* Our Sinks */
 
@@ -32,7 +32,7 @@ public class LoopExample1 extends Activity {
             System.out.println("I'm a for-loop sink!");
 
         int j = 0;
-        while (j < tainted) {
+        while (j < obfuscated.length()) {
             System.out.println("I'm a while-loop sink!");
             j++;
         }
@@ -41,7 +41,7 @@ public class LoopExample1 extends Activity {
         do {
             System.out.println("I'm a do-while-loop sink!");
             k++;
-        } while (k < tainted);
+        } while (k < obfuscated.length());
 
         if (obfuscated.charAt(0) == 'a')
             System.out.println("I start with an 'a'!");

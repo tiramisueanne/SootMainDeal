@@ -28,78 +28,95 @@ public class myLoopInstrument extends BodyTransformer {
         final PatchingChain<Unit> units = b.getUnits();
         SootClass c = Scene.v().getSootClass("OuterClass");
         c.setApplicationClass();
-        SootMethod ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
-                                    "void ourMethod(java.lang.Object)");
-        SootMethod ourMethodInt = Scene.v().getSootClass("OuterClass").getMethod("void ourMethod(int)");
-       
+      
         Local tmpRef = Jimple.v().newLocal("tmpRef", RefType.v("OuterClass"));
         b.getLocals().add(tmpRef);
 
         Iterator<Loop> lIt = loops.iterator();
         while(lIt.hasNext()){
             Loop loop = lIt.next();
-            Stmt header = loop.getHead();
+            Collection<Stmt> exits = loop.getLoopExits();
+            Iterator<Stmt> eIt = exits.iterator();
+            while(eIt.hasNext()){
+            Stmt ex = eIt.next();
  
-            if(header instanceof IfStmt) {
-                //System.out.println("If statement found");
-                IfStmt head = (IfStmt) header;
+            if(ex instanceof IfStmt) {
+           
+                IfStmt head = (IfStmt) ex;
                 Value cond = head.getCondition();
                 if(cond instanceof ConditionExpr){
                     ConditionExpr condEx = (ConditionExpr)head.getCondition();
-                    //System.out.println("cond class is: "+ condEx.getClass());
+                   
                     Value op1 = condEx.getOp1();
-                    Value op2 = condEx.getOp2(); //do I need to check if one of these is a constant?
+                    Value op2 = condEx.getOp2(); 
                     System.out.println("op1: "+op1+", type: "+op1.getType()+", op2: "+op2+", type:"+op2.getType()); 
-                    
-                    Type t1 = op1.getType();
-                    if(t1 instanceof PrimType){
-                        if(t1 instanceof IntType){
-                            units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
-                            tmpRef, ourMethodInt.makeRef(), op1)), head); 
-                            System.out.println("Invoking int version");
-                        }
-                        else {
-                            System.out.println("op1 is unsuportted Primtype "+t1.getClass());
-                        }
-                    } else if (t1 instanceof RefLikeType) {
-                    
-                    units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
-                        tmpRef, ourMethod.makeRef(), op1)), head);
-                   } else {
-                       System.out.println("op1 unknown type "+op1.getClass());
-                   }
-
-
-                   Type t2 = op2.getType();
-                   if(t2 instanceof PrimType){
-                        if(t2 instanceof IntType){
-                            units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
-                            tmpRef, ourMethodInt.makeRef(), op2)), head); 
-                            System.out.println("Invoking int version");
-                        }
-                        else {
-                            System.out.println("op2 is unsuportted Primtype "+t2.getClass());
-                        }
-                    } else if (t2 instanceof RefLikeType) {
-                    
-                    units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
-                        tmpRef, ourMethod.makeRef(), op2)), head);
-                   } else {
-                       System.out.println("op2 unknown type "+op2.getClass());
-                   }
-                }
-                else {
+                    invokeMethod(units, tmpRef, head, op1);
+                    invokeMethod(units, tmpRef, head, op2);
+               }     
+               else {
                     System.out.println("HELP CONDITION IS NOT A CONDITIONEXPR, fix");
                     System.out.println("cond is: "+cond.getClass()+": "+cond);
-                    //System.exit(1);               
-                }
-            }
-            else {
-                System.out.println("HELP HEADER IS NOT AN IF STATEMENT, fix it");
-                System.out.println("header is: "+header.getClass()+": "+header);
+                    //System.exit(1);              
+               }
+          }
+          else {
+                //System.out.println("HELP HEADER IS NOT AN IF STATEMENT, fix it");
+                //System.out.println("header is: "+ex.getClass()+": "+ex);
                 //System.exit(2);
-            }
+                // Ignore JExitMonitorStmt, JEnterMonitorStmt, JAssignStmt, JInvokeStmt, JGotoStmt, 
+          }
 
-        }   
+        }
+       }  
     }
+
+    public void invokeMethod(PatchingChain<Unit> units, Local tmpRef, Stmt head, Value op){
+        Type t = op.getType();
+        SootMethod ourMethod = null;
+
+        if (t instanceof RefLikeType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(java.lang.Object)");
+        }
+        else if (t instanceof IntType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(int)");
+        }
+        else if (t instanceof BooleanType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(boolean)");
+        }
+        else if (t instanceof ByteType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(byte)");
+        }
+        else if (t instanceof CharType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(char)");
+        }
+        else if (t instanceof DoubleType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(double)");
+        }
+        else if (t instanceof FloatType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(float)");
+        }
+        else if (t instanceof LongType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(long)");
+        }
+        else if (t instanceof ShortType){
+            ourMethod = Scene.v().getSootClass("OuterClass").getMethod(
+                                    "void ourMethod(short)"); 
+        }
+
+        if (ourMethod != null){
+            units.insertBefore(Jimple.v().newInvokeStmt(Jimple.v().newVirtualInvokeExpr(
+            tmpRef, ourMethod.makeRef(), op)), head); 
+        }
+        else {
+            System.out.println("invoking method on unknown type: "+t.getClass());
+        }         
+    } 
 }

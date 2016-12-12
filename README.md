@@ -30,7 +30,7 @@ java -cp ./soot-trunk.jar:./:path_to_java_rt.jar:./platforms sootTransformation 
 * /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar [macOS]
 * $(/usr/libexec/java_home)/jre/lib/rt.jar [works on bash shell in macOS]
 
-#### Example Compilation & Run (in /soot directory) ####
+#### Example compilation & run (in /soot directory) ####
 ```
 javac -cp soot-trunk.jar sootTransformation.java myLoopInstrument.java OuterClass.java
 
@@ -40,7 +40,7 @@ java -cp ./soot-trunk.jar:./:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/C
 ## Soot -> FlowDroid ##
 To make it easier to run the new APK produced by Soot through FlowDroid, I would recommend moving the APK to the /apps directory. I would then remove the /soot/sootOuput directory to allow for future Soot runs.
 
-#### Example Move & Delete ###
+#### Example move & delete ###
 ```
 mv sootOutput/Loop1Modified.apk ../apps/Loop1NewAPK.apk
 
@@ -52,7 +52,7 @@ cd ..
 ## FlowDroid ##
 1) To run (in top-level directory)
 ```
-java -jar flowdroid/FlowDroid.jar path_to_apk.apk path_to_android_sdk
+java -jar FlowDroid.jar path_to_apk.apk path_to_android_sdk
 ```
 
 2) Examine the output produced by FlowDroid. If the output contains the following line, no taints were found.
@@ -72,9 +72,9 @@ Found a flow to sink virtualinvoke $rX.<sink_class: return_type sink_method(arg_
 
 FlowDroid will create its own empty /sootOuput directory which can be ignored for the purposes of this analysis.
 
-#### Example Run (in top-level directory) ####
+#### Example run (in top-level directory) ####
 ```
-java -jar flowdroid/FlowDroid.jar apps/Loop1NewAPK.apk /Users/ekaminsky/Library/Android/sdk
+java -jar FlowDroid.jar apps/Loop1NewAPK.apk /Users/ekaminsky/Library/Android/sdk
 ```
 
 ## Notes ##
