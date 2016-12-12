@@ -42,7 +42,7 @@ To make it easier to run the new APK produced by Soot through FlowDroid, I would
 
 #### Example move & delete ###
 ```
-mv sootOutput/Loop1Modified.apk ../apps/Loop1NewAPK.apk
+mv sootOutput/Loop1Modified.apk ../apps/Loop1ModifiedNew.apk
 
 rm -rf sootOutput
 
@@ -76,7 +76,7 @@ FlowDroid will create its own empty /sootOuput directory which can be ignored fo
 
 #### Example run (in top-level directory) ####
 ```
-java -jar FlowDroid.jar apps/Loop1NewAPK.apk soot/platforms
+java -jar FlowDroid.jar apps/Loop1ModifiedNew.apk soot/platforms
 ```
 
 ## Notes ##
