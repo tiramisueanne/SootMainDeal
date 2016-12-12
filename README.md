@@ -55,6 +55,8 @@ cd ..
 java -jar FlowDroid.jar path_to_apk.apk path_to_android_sdk
 ```
 
+An android SDK is already included in the repo, under /soot/platforms. 
+
 2) Examine the output produced by FlowDroid. If the output contains the following line, no taints were found.
 ```
 [main] ERROR soot.jimple.infoflow.Infoflow - No sources or sinks found, aborting analysis
@@ -74,7 +76,7 @@ FlowDroid will create its own empty /sootOuput directory which can be ignored fo
 
 #### Example run (in top-level directory) ####
 ```
-java -jar FlowDroid.jar apps/Loop1NewAPK.apk /Users/ekaminsky/Library/Android/sdk
+java -jar FlowDroid.jar apps/Loop1NewAPK.apk soot/platforms
 ```
 
 ## Notes ##
